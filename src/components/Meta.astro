@@ -1,6 +1,15 @@
 ---
-const { title, description } = Astro.props;
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { 
+  title = "UmbralTools", 
+  description = "Meta description needed." 
+} = Astro.props;
 ---
+
 <meta charset="utf-8" />
 <!--
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
