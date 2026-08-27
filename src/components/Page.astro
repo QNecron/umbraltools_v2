@@ -1,0 +1,23 @@
+---
+import '../styles/core.css';
+
+import Meta from './Meta.astro';
+
+interface Props {
+  pageTitle: string;
+  pageDescription: string;
+}
+
+const { pageTitle, pageDescription } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+    <Meta title={pageTitle} description={pageDescription} />
+	</head>
+	<body id="body" class="body">
+		<main id="main" class="main" role="main">
+      <slot />
+    </main>
+	</body>
+</html>
