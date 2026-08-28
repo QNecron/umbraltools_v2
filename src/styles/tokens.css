@@ -1,0 +1,11 @@
+:root {
+
+  /* colors */
+  --color-black: #111;
+  --color-white: #eee;
+
+  /* timing */
+  --timing-slow: .48s ease-in-out 0s;
+  --timing-normal: .24s ease-in-out 0s;
+  --timing-fast: 16s ease-in-out 0s;
+}
