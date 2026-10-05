@@ -1,0 +1,34 @@
+---
+interface Props {
+  nav: Array<{"name": string, "url": string}>;
+}
+
+const { 
+  nav = [
+    {
+      "name": "Hello",
+      "url": "https://www.google.com"
+    },
+    {
+      "name": "World",
+      "url": "https://www.google.com"
+    }
+  ]
+} = Astro.props;
+---
+
+<header id="header" class="" role="banner">
+
+  <nav class="nav-primary" role="navigation">
+
+    <a href="/" class="nav-primary__link">Home</a>
+
+    {nav.map((data) => 
+      <a href={data.url} class="nav-primary__link">
+        {data.name}
+      </a>
+    )}
+
+  </nav>
+
+</header>

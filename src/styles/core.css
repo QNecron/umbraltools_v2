@@ -1,5 +1,5 @@
 body {
-  background: var(--color-black);
-  color: var(--color-white);
+  background: rgb(var(--color-black));
+  color: rgb(var(--color-white));
   font-size: 16px;
 }

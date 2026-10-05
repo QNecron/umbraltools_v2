@@ -1,8 +1,14 @@
 :root {
 
   /* colors */
-  --color-black: #111;
-  --color-white: #eee;
+  --color-black: 17, 17, 17;
+  --color-white: 238, 238, 238;
+
+  --color-yellow: 250, 152, 58;
+  --color-red: 235, 47, 6;
+  --color-blue: 30, 55, 153;
+  --color-teal: 60, 99, 130;
+  --color-cyan: 56, 173, 169;
 
   /* timing */
   --timing-slow: .48s ease-in-out 0s;

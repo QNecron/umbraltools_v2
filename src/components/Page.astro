@@ -4,22 +4,32 @@ import '../styles/reset.css';
 import '../styles/core.css';
 
 import Meta from './Meta.astro';
+import Header from './Header.astro';
+
+import Nav from '../data/navigation.json';
 
 interface Props {
-  pageTitle: string;
-  pageDescription: string;
+  metaTitle: string;
+  metaDescription: string;
 }
 
-const { pageTitle, pageDescription } = Astro.props;
+const { metaTitle, metaDescription } = Astro.props;
 ---
 
 <html lang="en">
+
 	<head>
-    <Meta title={pageTitle} description={pageDescription} />
+    <Meta title={metaTitle} description={metaDescription} />
 	</head>
+
 	<body id="body" class="body">
+
+    <Header nav={Nav} />
+
 		<main id="main" class="main" role="main">
       <slot />
     </main>
+
 	</body>
+
 </html>

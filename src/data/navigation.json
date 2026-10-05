@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Creator",
+    "url": "/creator"
+  },
+  {
+    "name": "Feats",
+    "url": "/feats"
+  },
+  {
+    "name": "Spells",
+    "url": "/spells"
+  },
+  {
+    "name": "Items",
+    "url": "/items"
+  },
+  {
+    "name": "Codex",
+    "url": "/codex"
+  }
+]

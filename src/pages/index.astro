@@ -1,12 +1,35 @@
 ---
 import Page from '../components/Page.astro';
+import Hero from '../components/Hero.astro';
+
+import Content from '../data/home.json';
 ---
 
 <Page 
-  pageTitle="UmbralTools" 
-  pageDescription="Toolset for the ShadowDark TTRPG."
+  metaTitle="UmbralTools" 
+  metaDescription="Toolset for the ShadowDark TTRPG."
 >
 
-  <h1>Astro + React</h1>
+  {Content.map((data) => {
+
+    // component : hero
+    if(data.type === 'hero') {
+      return(
+        <Hero 
+          heroId={data.id} 
+          heroHeading={data.heading} 
+          heroTitle={data.title} 
+          heroImgDesktop={data.desktop.img} 
+          heroImgDesktopHeight={data.desktop.height} 
+          heroImgDesktopWidth={data.desktop.width} 
+          heroImgMobile={data.mobile.img} 
+          heroImgMobileHeight={data.mobile.height} 
+          heroImgMobileWidth={data.mobile.width} 
+          heroAlt={data.alt} 
+        />
+      )
+    }
+
+  })}
 
 </Page>

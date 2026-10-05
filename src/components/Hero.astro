@@ -1,0 +1,62 @@
+---
+interface Props {
+  heroId: string;
+  heroHeading: string;
+  heroTitle: string;
+  heroImgDesktop: string;
+  heroImgDesktopHeight: string;
+  heroImgDesktopWidth: string;
+  heroImgMobile: string;
+  heroImgMobileHeight: string;
+  heroImgMobileWidth: string;
+  heroAlt: string;
+}
+
+const { 
+  heroId, 
+  heroHeading, 
+  heroTitle, 
+  heroImgDesktop, 
+  heroImgDesktopHeight,
+  heroImgDesktopWidth,
+  heroImgMobile, 
+  heroImgMobileHeight, 
+  heroImgMobileWidth, 
+  heroAlt 
+} = Astro.props;
+
+const Heading = heroHeading === 'h2' ? 'h2' : 'h1';
+---
+<section 
+  id={heroId} 
+  class="hero" 
+  role="region" 
+  aria-labelledby={heroId + "-title"}
+>
+
+  <picture class="hero__asset">
+    <source
+      srcset={heroImgDesktop}
+      height={heroImgDesktopHeight}
+      width={heroImgDesktopWidth}
+      media="(min-width: 768px)"
+    />
+    <img
+      src={heroImgMobile}
+      class="hero__asset-img"
+      height={heroImgMobileHeight}
+      width={heroImgMobileWidth}
+      fetchpriority="high"
+      aria-hidden="true"
+      alt={heroAlt}
+    />
+  </picture>
+
+  <Heading 
+    id={heroId + "-title"}
+    class="hero__title"
+  >
+    {heroTitle}
+  </Heading>
+
+</section>

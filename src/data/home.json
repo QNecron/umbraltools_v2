@@ -1,0 +1,19 @@
+[
+  {
+    "type": "hero",
+    "id": "open",
+    "heading": "h1",
+    "title": "Umbral Tools",
+    "desktop": {
+      "img": "forest_dark_d-1920-1080.webp",
+      "height": "1080",
+      "width": "1920"
+    },
+    "mobile": {
+      "img": "forest_dark_m-720-1280.webp",
+      "height": "1280",
+      "width": "720"
+    },
+    "alt": "Dark, foggy forest at dawn."
+  }
+]
