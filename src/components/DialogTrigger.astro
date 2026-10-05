@@ -1,0 +1,22 @@
+---
+interface Props {
+  dialogName: string;
+  dialogProps: string;
+  dialogTitle: string;
+}
+
+const { 
+  dialogName, 
+  dialogProps, 
+  dialogTitle 
+} = Astro.props;
+---
+
+<button 
+  class="btn"
+  command="show-modal" 
+  commandfor={dialogName}
+  data-button={dialogProps}
+>
+  {dialogTitle}
+</button>

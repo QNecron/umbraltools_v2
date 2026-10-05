@@ -10,7 +10,27 @@
   --color-teal: 60, 99, 130;
   --color-cyan: 56, 173, 169;
 
-  /* timing */
+  /* sizes */
+  --size-01: 1px;
+  --size-02: 0.125rem;
+  --size-04: 0.25rem;
+  --size-08: 0.5rem;
+  --size-12: 0.75rem;
+  --size-16: 1rem;
+  --size-24: 1.5rem;
+  --size-32: 2rem;
+  --size-40: 2.5rem;
+  --size-48: 3rem;
+  --size-56: 3.5rem;
+  --size-64: 4rem;
+  --size-72: 4.5rem;
+  --size-80: 5rem;
+
+  /* shadows */
+  --box-shadow-close: 0 var(--size-02) var(--size-04) rgba(var(--color-black));
+  --box-shadow-normal: 0 var(--size-04) var(--size-04) rgba(var(--color-black));
+
+  /* timings */
   --timing-slow: .48s ease-in-out 0s;
   --timing-normal: .24s ease-in-out 0s;
   --timing-fast: 16s ease-in-out 0s;

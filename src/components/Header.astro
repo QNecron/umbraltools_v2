@@ -1,25 +1,29 @@
 ---
+import Dialog from './Dialog.astro';
+import DialogTrigger from './DialogTrigger.astro';
+
 interface Props {
   nav: Array<{"name": string, "url": string}>;
 }
 
-const { 
-  nav = [
-    {
-      "name": "Hello",
-      "url": "https://www.google.com"
-    },
-    {
-      "name": "World",
-      "url": "https://www.google.com"
-    }
-  ]
-} = Astro.props;
+const { nav } = Astro.props;
 ---
 
-<header id="header" class="" role="banner">
+<header id="header" class="header" role="banner">
 
-  <nav class="nav-primary" role="navigation">
+  <a href="/" class="header__logo">
+    <img src="d20.png" class="header__logo-img" alt="Umbral Tools"/>
+  </a>
+
+  <DialogTrigger 
+    dialogName="nav-primary" 
+    dialogProps="primary" 
+    dialogTitle="Menu" 
+  />
+
+  <Dialog dialogName="nav-primary" dialogProps="left">
+
+    <nav class="nav-primary" role="navigation">
 
     <a href="/" class="nav-primary__link">Home</a>
 
@@ -30,5 +34,7 @@ const {
     )}
 
   </nav>
+
+  </Dialog>
 
 </header>

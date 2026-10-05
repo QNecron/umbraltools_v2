@@ -1,0 +1,27 @@
+---
+interface Props {
+  dialogName: string;
+  dialogProps: string;
+}
+
+const { dialogName, dialogProps } = Astro.props;
+---
+
+<dialog id={dialogName} class="dialog" data-dialog={dialogProps}>
+
+  <div class="dialog__content">
+
+    <button 
+      class="btn"
+      commandfor={dialogName} 
+      command="close"
+      data-button="primary icon"
+    >
+      Close
+    </button>
+
+    <slot />
+
+  </div>
+
+</dialog>

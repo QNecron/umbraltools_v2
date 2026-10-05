@@ -52,11 +52,15 @@ const Heading = heroHeading === 'h2' ? 'h2' : 'h1';
     />
   </picture>
 
-  <Heading 
-    id={heroId + "-title"}
-    class="hero__title"
-  >
-    {heroTitle}
-  </Heading>
+  <div class="hero__content">
+
+    <Heading 
+      id={heroId + "-title"}
+      class="hero__title"
+    >
+      {heroTitle}
+    </Heading>
+
+  </div>
 
 </section>
