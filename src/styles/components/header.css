@@ -1,0 +1,29 @@
+/* component : header */
+.header {
+  --header-background: rgba(var(--color-black), .32);
+  --header-border: none;
+  --header-box-shadow: var(--box-shadow-close);
+  --header-padding: var(--size-16);
+  --header-inset: 0 0 auto 0;
+
+  --header-nav-gap: var(--size-02);
+
+  backdrop-filter: blur(var(--size-04));
+  background: var(--header-background);
+  border-bottom: var(--header-border);
+  box-shadow: var(--header-box-shadow);
+  padding: var(--header-padding);
+  position: fixed;
+  inset: var(--header-inset);
+  z-index: 7;
+}
+
+.header__nav {
+  align-items: center;
+  display: flex;
+  gap: var(--header-nav-gap);
+}
+
+.header__logo-img {
+  filter: invert(90%);
+}

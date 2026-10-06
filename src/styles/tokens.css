@@ -1,5 +1,9 @@
 :root {
 
+  /* fonts */
+  --font-body: sans-serif;
+  --font-heading: "Oswald", sans-serif;
+
   /* colors */
   --color-black: 17, 17, 17;
   --color-white: 238, 238, 238;
@@ -27,8 +31,8 @@
   --size-80: 5rem;
 
   /* shadows */
-  --box-shadow-close: 0 var(--size-02) var(--size-04) rgba(var(--color-black));
-  --box-shadow-normal: 0 var(--size-04) var(--size-04) rgba(var(--color-black));
+  --box-shadow-close: 0 var(--size-02) var(--size-04) rgba(0,0,0,.88);
+  --box-shadow-normal: 0 var(--size-04) var(--size-04) rgba(0,0,0,.64);
 
   /* timings */
   --timing-slow: .48s ease-in-out 0s;

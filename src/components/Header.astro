@@ -1,6 +1,7 @@
 ---
 import Dialog from './Dialog.astro';
 import DialogTrigger from './DialogTrigger.astro';
+import Wrapper from './Wrapper.astro';
 
 interface Props {
   nav: Array<{"name": string, "url": string}>;
@@ -11,29 +12,43 @@ const { nav } = Astro.props;
 
 <header id="header" class="header" role="banner">
 
-  <a href="/" class="header__logo">
-    <img src="d20.png" class="header__logo-img" alt="Umbral Tools"/>
-  </a>
+  <Wrapper>
 
-  <DialogTrigger 
-    dialogName="nav-primary" 
-    dialogProps="primary" 
-    dialogTitle="Menu" 
-  />
+    <div class="header__nav">
+
+      <a href="/" class="btn" data-btn="primary icon">
+        <img 
+          src="d20.svg" 
+          class="header__logo-img" 
+          height="28" 
+          width="28" 
+          alt="Umbral Tools" 
+        />
+      </a>
+
+      <DialogTrigger 
+        dialogName="nav-primary" 
+        dialogProps="primary" 
+        dialogTitle="Menu" 
+      />
+
+    </div>
+
+  </Wrapper>
 
   <Dialog dialogName="nav-primary" dialogProps="left">
 
     <nav class="nav-primary" role="navigation">
 
-    <a href="/" class="nav-primary__link">Home</a>
+      <a href="/" class="nav-primary__link">Home</a>
 
-    {nav.map((data) => 
-      <a href={data.url} class="nav-primary__link">
-        {data.name}
-      </a>
-    )}
+      {nav.map((data) => 
+        <a href={data.url} class="nav-primary__link">
+          {data.name}
+        </a>
+      )}
 
-  </nav>
+    </nav>
 
   </Dialog>
 

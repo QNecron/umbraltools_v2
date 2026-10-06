@@ -1,0 +1,11 @@
+---
+interface Props {
+  type?: string;
+}
+
+const { type = "structure" } = Astro.props;
+---
+
+<div class="wrapper" data-wrapper={type}>
+  <slot />
+</div>

@@ -3,7 +3,10 @@ import '../styles/tokens.css';
 import '../styles/reset.css';
 import '../styles/core.css';
 
+import.meta.glob('../styles/components/*.css', { eager: false });
+
 import Meta from './Meta.astro';
+import Fonts from './Fonts.astro';
 import Header from './Header.astro';
 
 import Nav from '../data/navigation.json';
@@ -20,6 +23,7 @@ const { metaTitle, metaDescription } = Astro.props;
 
 	<head>
     <Meta title={metaTitle} description={metaDescription} />
+    <Fonts />
 	</head>
 
 	<body id="body" class="body">

@@ -1,0 +1,26 @@
+/* component : hero */
+.hero {
+  --hero-content-align-items: center;
+  --hero-content-display: flex;
+  --hero-content-flex-direction: column;
+  --hero-contnet-justify-content: center;
+  --hero-content-position: absolute;
+  --hero-content-inset: 0;
+
+  margin-bottom: 100vh;
+  position: relative;
+}
+
+.hero__content {
+  background: linear-gradient(
+    0deg, 
+    rgba(var(--color-black), 1) 0%, 
+    rgba(var(--color-black), 0) 100%
+  );
+  align-items: var(--hero-content-align-items);
+  display: var(--hero-content-display);
+  flex-direction: var(--hero-content-flex-direction);
+  justify-content: var(--hero-contnet-justify-content);
+  position: var(--hero-content-position);
+  inset: var(--hero-content-inset);
+}

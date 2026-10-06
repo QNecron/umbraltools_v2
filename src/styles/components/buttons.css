@@ -1,0 +1,55 @@
+/* core : button */
+.btn {
+  --btn-background: rgba(var(--color-black), .64);
+  --btn-border: solid var(--size-01);
+  --btn-border-color: rgba(var(--color-white), .08);
+  --btn-box-shadow: var(--box-shadow-close);
+  --btn-color: var(--color-white);
+  --btn-font-family: var(--font-heading);
+  --btn-font-size: 14px;
+  --btn-justify-content: center;
+  --btn-letter-spacing: var(--size-02);
+  --btn-padding: 0 var(--size-16);
+  --btn-text-align: center;
+  --btn-height: var(--size-40);
+  --btn-width: initial;
+
+  align-items: center;
+  align-self: flex-start;
+  background: var(--btn-background);
+  border: var(--btn-border);
+  border-color: var(--btn-border-color);
+  box-shadow: var(--btn-box-shadow);
+  color: var(--btn-color);
+  display: inline-flex;
+  font-family: var(--btn-font-family);
+  font-size: var(--btn-font-size);
+  justify-content: var(--btn-justify-content);
+  letter-spacing: var(--btn-letter-spacing);
+  padding: var(--btn-padding);
+  text-align: var(--btn-text-align);
+  text-decoration: none;
+  text-transform: capitalize;
+  height: var(--btn-height);
+  width: var(--btn-width);
+
+  &:focus,
+  &:hover,
+  &[aria-selected="true"] {
+    --btn-background: rgba(var(--color-black), .88);
+    --btn-border-color: rgba(var(--color-white), .32);
+  }
+
+}
+
+[data-btn~="icon"] {
+  --btn-padding: 0;
+  --btn-width: var(--size-40);
+  max-width: var(--size-40);
+}
+
+[data-btn~="full"] {
+  --btn-justify-content: flex-start;
+  --btn-text-align: left;
+  --btn-width: 100%;
+}

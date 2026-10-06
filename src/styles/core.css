@@ -4,60 +4,22 @@ body {
   font-size: 16px;
 }
 
-/* component : header */
-.header {
-  --header-background: rgba(var(--color-black), .56);
-  --header-border: none;
-  --header-box-shadow: var(--box-shadow-close);
-  --header-padding: var(--size-16);
-  --header-gap: var(--size-16);
-  --header-inset: var(--size-16) var(--size-16) auto var(--size-16);
+/* structure : wrapper */
+[wrapper] {
+  --wrapper-padding: var(--size-32);
+  --wrapper-max-width: 88rem; /* 1408 */
 
-  --header-logo-size: var(--size-40);
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: var(--wrapper-padding);
+  padding-left: var(--wrapper-padding);
+  max-width: var(--wrapper-max-width);
 
-  align-items: center;
-  backdrop-filter: blur(var(--size-04));
-  background: var(--header-background);
-  border-bottom: var(--header-border);
-  box-shadow: var(--header-box-shadow);
-  display: flex;
-  gap: var(--header-gap);
-  padding: var(--header-padding);
-  position: fixed;
-  inset: var(--header-inset);
-  z-index: 7;
-}
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    --wrapper-padding: var(--size-24);
+  }
+  @media only screen and (max-width: 767px) {
+    --wrapper-padding: var(--size-16);
+  }
 
-.header__logo {
-  max-width: var(--header-logo-size);
-}
-
-.header__logo-img {
-  filter: invert(90%);
-}
-
-/* component : hero */
-.hero {
-  --hero-content-align-items: center;
-  --hero-content-display: flex;
-  --hero-content-flex-direction: column;
-  --hero-contnet-justify-content: center;
-  --hero-content-position: absolute;
-  --hero-content-inset: 0;
-
-  position: relative;
-}
-
-.hero__content {
-  background: linear-gradient(
-    0deg, 
-    rgba(var(--color-black), 1) 0%, 
-    rgba(var(--color-black), 0) 100%
-  );
-  align-items: var(--hero-content-align-items);
-  display: var(--hero-content-display);
-  flex-direction: var(--hero-content-flex-direction);
-  justify-content: var(--hero-contnet-justify-content);
-  position: var(--hero-content-position);
-  inset: var(--hero-content-inset);
 }
