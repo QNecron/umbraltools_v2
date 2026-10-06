@@ -1,0 +1,45 @@
+---
+import Wrapper from './Wrapper.astro';
+
+interface Props {
+  id: string;
+  props?: string;
+  heading?: string;
+  title?: string;
+}
+
+const { 
+  id, 
+  props, 
+  heading,
+  title 
+} = Astro.props;
+
+const Heading = heading === 'h3' ? 'h3' : 'h2';
+---
+
+<section 
+  id={id} 
+  class="section" 
+  data-section={props} 
+  aria-labelledby={id + '-title'}
+  role="region"
+>
+
+  <Wrapper>
+
+    {title && 
+      <Heading 
+        id={id + '-title'} 
+        class="section__title" 
+        data-heading="2"
+      >
+        {title}
+      </Heading>
+    }
+
+    <slot />
+
+  </Wrapper>
+
+</section>
