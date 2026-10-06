@@ -3,7 +3,9 @@
   --hero-content-align-items: center;
   --hero-content-display: flex;
   --hero-content-flex-direction: column;
-  --hero-contnet-justify-content: center;
+  --hero-content-gap: var(--size-16);
+  --hero-content-justify-content: center;
+  --hero-content-text-shadow: var(--text-shadow-close);
   --hero-content-position: absolute;
   --hero-content-inset: 0;
 
@@ -20,7 +22,13 @@
   align-items: var(--hero-content-align-items);
   display: var(--hero-content-display);
   flex-direction: var(--hero-content-flex-direction);
-  justify-content: var(--hero-contnet-justify-content);
+  gap: var(--hero-content-gap);
+  justify-content: var(--hero-content-justify-content);
+  text-shadow: var(--hero-content-text-shadow);
   position: var(--hero-content-position);
   inset: var(--hero-content-inset);
+}
+
+.hero__logo {
+  filter: drop-shadow(var(--box-shadow-close));
 }

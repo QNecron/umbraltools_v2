@@ -1,65 +1,78 @@
 ---
 interface Props {
-  heroId: string;
-  heroHeading: string;
-  heroTitle: string;
-  heroImgDesktop: string;
-  heroImgDesktopHeight: string;
-  heroImgDesktopWidth: string;
-  heroImgMobile: string;
-  heroImgMobileHeight: string;
-  heroImgMobileWidth: string;
-  heroAlt: string;
+  id: string;
+  heading?: string;
+  title: string;
+  imgDesktop: string;
+  imgDesktopHeight: string;
+  imgDesktopWidth: string;
+  imgMobile: string;
+  imgMobileHeight: string;
+  imgMobileWidth: string;
+  alt: string;
+  logo?: boolean;
 }
 
 const { 
-  heroId, 
-  heroHeading, 
-  heroTitle, 
-  heroImgDesktop, 
-  heroImgDesktopHeight,
-  heroImgDesktopWidth,
-  heroImgMobile, 
-  heroImgMobileHeight, 
-  heroImgMobileWidth, 
-  heroAlt 
+  id, 
+  heading = 'h2', 
+  title, 
+  imgDesktop, 
+  imgDesktopHeight,
+  imgDesktopWidth,
+  imgMobile, 
+  imgMobileHeight, 
+  imgMobileWidth, 
+  alt, 
+  logo = false
 } = Astro.props;
 
-const Heading = heroHeading === 'h2' ? 'h2' : 'h1';
+const Heading = heading === 'h1' ? 'h1' : 'h2';
 ---
 <section 
-  id={heroId} 
+  id={id} 
   class="hero" 
   role="region" 
-  aria-labelledby={heroId + "-title"}
+  aria-labelledby={id + "-title"}
 >
 
   <picture class="hero__asset">
     <source
-      srcset={heroImgDesktop}
-      height={heroImgDesktopHeight}
-      width={heroImgDesktopWidth}
+      srcset={imgDesktop}
+      height={imgDesktopHeight}
+      width={imgDesktopWidth}
       media="(min-width: 768px)"
     />
     <img
-      src={heroImgMobile}
+      src={imgMobile}
       class="hero__asset-img"
-      height={heroImgMobileHeight}
-      width={heroImgMobileWidth}
+      height={imgMobileHeight}
+      width={imgMobileWidth}
       fetchpriority="high"
       aria-hidden="true"
-      alt={heroAlt}
+      alt={alt}
     />
   </picture>
 
   <div class="hero__content">
 
     <Heading 
-      id={heroId + "-title"}
-      class="hero__title"
+      id={id + "-title"}
+      class="hero__title" 
+      data-heading="1"
     >
-      {heroTitle}
+      {title}
     </Heading>
+
+    {logo && (
+      <img 
+        src="logo_sd_white.webp" 
+        class="hero__logo" 
+        height="105"
+        width="256"
+        alt="ShadowDark" 
+      />
+    )}
 
   </div>
 

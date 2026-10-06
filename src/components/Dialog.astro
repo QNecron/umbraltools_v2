@@ -1,19 +1,19 @@
 ---
 interface Props {
-  dialogName: string;
-  dialogProps: string;
+  name: string;
+  props: string;
 }
 
-const { dialogName, dialogProps } = Astro.props;
+const { name, props } = Astro.props;
 ---
 
-<dialog id={dialogName} class="dialog" data-dialog={dialogProps}>
+<dialog id={name} class="dialog" data-dialog={props}>
 
   <div class="dialog__content">
 
     <button 
       class="btn"
-      commandfor={dialogName} 
+      commandfor={name} 
       command="close"
       data-btn="primary"
     >

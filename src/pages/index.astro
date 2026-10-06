@@ -16,16 +16,17 @@ import Content from '../data/home.json';
     if(data.type === 'hero') {
       return(
         <Hero 
-          heroId={data.id} 
-          heroHeading={data.heading} 
-          heroTitle={data.title} 
-          heroImgDesktop={data.desktop.img} 
-          heroImgDesktopHeight={data.desktop.height} 
-          heroImgDesktopWidth={data.desktop.width} 
-          heroImgMobile={data.mobile.img} 
-          heroImgMobileHeight={data.mobile.height} 
-          heroImgMobileWidth={data.mobile.width} 
-          heroAlt={data.alt} 
+          id={data.id} 
+          heading={data.heading} 
+          title={data.title} 
+          imgDesktop={data.desktop.img} 
+          imgDesktopHeight={data.desktop.height} 
+          imgDesktopWidth={data.desktop.width} 
+          imgMobile={data.mobile.img} 
+          imgMobileHeight={data.mobile.height} 
+          imgMobileWidth={data.mobile.width} 
+          alt={data.alt} 
+          logo={true}
         />
       )
     }

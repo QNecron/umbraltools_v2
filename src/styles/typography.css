@@ -1,0 +1,37 @@
+/* typography */
+[data-heading] {
+  --heading-font-family: var(--font-heading);
+  --heading-font-size: var(--size-56);
+  --heading-font-weight: 300;
+  --heading-letting-spacing: var(--size-02);
+
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size);
+  font-weight: var(--heading-font-weight);
+  letter-spacing: var(--heading-letting-spacing);
+  text-transform: capitalize;
+}
+
+[data-heading="2"] {
+  --heading-font-size: var(--size-40);
+}
+
+[data-heading="3"] {
+  --heading-font-size: var(--size-32);
+}
+
+[data-heading="4"] {
+  --heading-font-size: var(--size-24);
+}
+
+[data-heading="5"] {
+  --heading-font-size: var(--size-16);
+}
+
+.srt {
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}

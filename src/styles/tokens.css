@@ -34,6 +34,9 @@
   --box-shadow-close: 0 var(--size-02) var(--size-04) rgba(0,0,0,.88);
   --box-shadow-normal: 0 var(--size-04) var(--size-04) rgba(0,0,0,.64);
 
+  --text-shadow-close: 0 var(--size-02) var(--size-04) rgba(0,0,0,.88);
+  --text-shadow-normal: 0 var(--size-04) var(--size-04) rgba(0,0,0,.64);
+
   /* timings */
   --timing-slow: .48s ease-in-out 0s;
   --timing-normal: .24s ease-in-out 0s;
