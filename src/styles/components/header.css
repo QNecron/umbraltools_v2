@@ -3,7 +3,7 @@
   --header-background: rgba(var(--color-black), .32);
   --header-border: none;
   --header-box-shadow: var(--box-shadow-close);
-  --header-padding: var(--size-16);
+  --header-padding: var(--size-16) 0;
   --header-inset: 0 0 auto 0;
 
   --header-nav-gap: var(--size-02);

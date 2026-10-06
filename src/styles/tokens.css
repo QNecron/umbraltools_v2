@@ -41,4 +41,7 @@
   --timing-slow: .48s ease-in-out 0s;
   --timing-normal: .24s ease-in-out 0s;
   --timing-fast: 16s ease-in-out 0s;
+
+  --timing-dialog: display 0.48s allow-discrete,
+    0.48s cubic-bezier(0.5, 0.25, 0, 1) 0s;
 }
