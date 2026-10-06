@@ -4,7 +4,7 @@
   --btn-border: solid var(--size-01);
   --btn-border-color: rgba(var(--color-white), .08);
   --btn-box-shadow: var(--box-shadow-close);
-  --btn-color: var(--color-white);
+  --btn-color: rgba(var(--color-white));
   --btn-font-family: var(--font-heading);
   --btn-font-size: 14px;
   --btn-justify-content: center;
