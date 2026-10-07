@@ -1,4 +1,6 @@
 ---
+import Icon from './Icon.astro';
+
 interface Props {
   name: string;
   props: string;
@@ -15,9 +17,10 @@ const { name, props } = Astro.props;
       class="btn dialog__close"
       commandfor={name} 
       command="close"
-      data-btn="primary"
+      data-btn="primary icon"
     >
-      Close
+      <span class="srt">Close</span>
+      <Icon icon="close" />
     </button>
 
     <slot />

@@ -1,0 +1,30 @@
+---
+interface Props {
+  icon: string;
+  height?: number;
+  width?: number;
+}
+
+const { 
+  icon, 
+  height = 24, 
+  width = 24 
+} = Astro.props;
+
+const Icon = (type: string) => {
+  let url = "error";
+
+  if(type === "close") url = "close.svg";
+
+  return url;
+}
+---
+
+<img 
+  src={"icons/" + Icon(icon)} 
+  class={"icon " + icon} 
+  height={height} 
+  width={width} 
+  alt="" 
+  aria-hidden="true" 
+/>

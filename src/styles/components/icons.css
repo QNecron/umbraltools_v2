@@ -1,0 +1,7 @@
+/* icon */
+.icon {
+  --icon-filter: invert(80%);
+
+  filter: var(--icon-filter);
+  transition: var(--timing-normal);
+}

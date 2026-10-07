@@ -40,10 +40,8 @@ const { nav } = Astro.props;
 
     <nav class="nav-primary" role="navigation">
 
-      <a href="/" class="nav-primary__link">Home</a>
-
       {nav.map((data) => 
-        <a href={data.url} class="nav-primary__link">
+        <a href={data.url} class="btn nav-primary__link" data-button="primary">
           {data.name}
         </a>
       )}

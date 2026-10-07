@@ -1,14 +1,14 @@
 /* component : dialog */
 .dialog {
   --dialog-backdrop-filter: blur(var(--size-04));
-  --dialog-background-color: rgba(var(--color-black), .88);
+  --dialog-background: rgba(var(--color-black), .64);
   --dialog-box-shadow: var(--box-shadow-close);
   --dialog-font-color: inherit;
   --dialog-padding: var(--size-32);
   --dialog-height: calc(100vh - var(--dialog-top));
   --dialog-width: 20rem; /* 320px */
   --dialog-position: fixed;
-  --dialog-top: 4.5rem; /* 72px */
+  --dialog-top: var(--size-72);
   --dialog-right: auto;
   --dialog-bottom: auto;
   --dialog-left: auto;
@@ -19,12 +19,12 @@
   --dialog-close-left: auto;
   --dialog-close-transform: translate(50%, 0);
 
-  --dialog-backdrop-background-color: var(--color-black-64);
+  --dialog-backdrop-background-color: rgba(var(--color-black), .32);
   --dialog-backdrop-filter: var(--size-04);
   --dialog-backdrop-top: var(--size-72);
 
   backdrop-filter: var(--dialog-backdrop-filter);
-  background: var(--dialog-background-color);
+  background: var(--dialog-background);
   border: 0;
   box-shadow: var(--dialog-box-shadow);
   color: var(--dialog-font-color);
@@ -57,7 +57,7 @@
     opacity: 0;
     height: calc(100vh - var(--dialog-backdrop-top));
     top: var(--dialog-backdrop-top);
-    transition: var(--timing-display);
+    transition: var(--timing-dialog);
   }
 }
 

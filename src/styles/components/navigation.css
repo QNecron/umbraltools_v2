@@ -1,0 +1,14 @@
+/* component : nav */
+.nav-primary {
+  --nav-display: flex;
+  --nav-flex-direction: column;
+  --nav-gap: var(--size-08);
+
+  display: var(--nav-display);
+  flex-direction: var(--nav-flex-direction);
+  gap: var(--nav-gap);
+}
+
+.nav-primary__link {
+  width: 100%;
+}
