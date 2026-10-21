@@ -1,12 +1,17 @@
 ---
 interface Props {
-  gap: number;
-  desktop: number;
-  tablet: number;
-  mobile: number;
+  gap?: number | string;
+  desktop?: number | string;
+  tablet?: number | string;
+  mobile?: number | string;
 }
 
-const { gap, desktop, tablet, mobile } = Astro.props;
+const { 
+  gap = 16, 
+  desktop = 4, 
+  tablet = 4, 
+  mobile = 2 
+} = Astro.props;
 ---
 
 <div 

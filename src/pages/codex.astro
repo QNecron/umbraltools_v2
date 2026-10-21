@@ -1,0 +1,42 @@
+---
+import Page from '../components/Page.astro';
+import Grid from '../components/Grid.astro';
+import Section from '../components/Section.astro';
+
+import Conditions from '../data/conditions.json';
+
+---
+
+<Page 
+  metaTitle="Codex | Umbral Tools" 
+  metaDescription="Additional rules and information for your ShadowDark campaign."
+>
+
+  <Section id="codex" heading="1" title="Codex">
+    Herp derp.
+  </Section>
+
+  <Section id="conditions" title="Conditions">
+
+    <Grid desktop="3" tablet="3">
+
+      {Conditions.map((data) => {
+
+        // component : hero
+        if(data) {
+          return(
+            <div>
+              <div>{data.name}</div>
+              <div>{data.effect_1}</div>
+              <div>{data.effect_2}</div>
+            </div>
+          )
+        }
+
+      })}
+
+    </Grid>
+
+  </Section>
+
+</Page>

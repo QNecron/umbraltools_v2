@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Cancel",
+    "effect_1": "DC [X] DEX or suppression.",
+    "effect_2": "All magical effects end."
+  },
+  {
+    "name": "Charm",
+    "effect_1": "DC [X] CHA or become ally for [Duration].",
+    "effect_2": "Act in a helpful manner."
+  },
+  {
+    "name": "Confused",
+    "effect_1": "DC [X] WIS or confused for [Duration].",
+    "effect_2": "Confusion includes; attacking a random ally, walking around randomly."
+  },
+  {
+    "name": "Death",
+    "effect_1": "DC [X] CON or drop to 0 HP.",
+    "effect_2": "Death timer of 1 round."
+  },
+  {
+    "name": "Disease",
+    "effect_1": "DC [X] CON or diseased.",
+    "effect_2": "Repeat check once per day; ends on success, reapplied on failure."
+  },
+  {
+    "name": "Drain",
+    "effect_1": "[X] [Attribute] damage.",
+    "effect_2": "Death if reduced to 0 [Attribute]."
+  },
+  {
+    "namne": "Paralyze",
+    "effect_1": "DC [X] CON or paralyzed.",
+    "effect_2": "Unable to act or move, creatures have ADV when attacking."
+  },
+  {
+    "namne": "Petrify",
+    "effect_1": "DC [X] CON or petrified.",
+    "effect_2": "Unable to act or move, only curable by Restoration or Wish."
+  },
+  {
+    "namne": "Poison",
+    "effect_1": "DC [X] CON or poisoned.",
+    "effect_2": "Secondary effects include; damage, death, paralyze, and sleep."
+  },
+  {
+    "name": "Polymorph",
+    "effect_1": "DC [X] INT or polymorphed for [Duration].",
+    "effect_2": "Turned into vermin."
+  },
+  {
+    "name": "Sleep",
+    "effect_1": "[X] WIS or asleep.",
+    "effect_2": "Unable to act or move, creatures automatically crit when attacking."
+  }
+]

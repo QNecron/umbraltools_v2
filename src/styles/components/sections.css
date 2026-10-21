@@ -1,0 +1,9 @@
+.section {
+  --section-padding: var(--size-40);
+
+  padding-top: var(--section-padding);
+}
+
+.section__title {
+
+}
