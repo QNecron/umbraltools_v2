@@ -1,7 +1,8 @@
 ---
 import Page from '../components/Page.astro';
-import Grid from '../components/Grid.astro';
 import Section from '../components/Section.astro';
+import Grid from '../components/Grid.astro';
+import Card from '../components/Card.astro';
 
 import Conditions from '../data/conditions.json';
 
@@ -22,14 +23,14 @@ import Conditions from '../data/conditions.json';
 
       {Conditions.map((data) => {
 
-        // component : hero
         if(data) {
           return(
-            <div>
-              <div>{data.name}</div>
-              <div>{data.effect_1}</div>
-              <div>{data.effect_2}</div>
-            </div>
+            <Card 
+              card="minimal"
+              title={data.name}
+              copy_1={data.effect_1}
+              copy_2={data.effect_2}
+            />
           )
         }
 

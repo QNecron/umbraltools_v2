@@ -4,11 +4,13 @@
   --heading-font-size: var(--size-56);
   --heading-font-weight: 300;
   --heading-letting-spacing: var(--size-02);
+  --heading-line-height: 1.5;
 
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size);
   font-weight: var(--heading-font-weight);
   letter-spacing: var(--heading-letting-spacing);
+  line-height: var(--heading-line-height);
   text-transform: capitalize;
 }
 

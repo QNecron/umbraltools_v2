@@ -1,9 +1,10 @@
 .section {
   --section-padding: var(--size-40);
+  --section-title-margin: var(--size-16);
 
   padding-top: var(--section-padding);
 }
 
 .section__title {
-
+  margin-bottom: var(--section-title-margin);
 }

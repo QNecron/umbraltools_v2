@@ -1,7 +1,7 @@
 [
   {
     "name": "Cancel",
-    "effect_1": "DC [X] DEX or suppression.",
+    "effect_1": "DC [X] DEX or magical suppression.",
     "effect_2": "All magical effects end."
   },
   {
@@ -51,7 +51,7 @@
   },
   {
     "name": "Sleep",
-    "effect_1": "[X] WIS or asleep.",
+    "effect_1": "DC [X] WIS or asleep.",
     "effect_2": "Unable to act or move, creatures automatically crit when attacking."
   }
 ]

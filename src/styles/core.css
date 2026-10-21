@@ -1,6 +1,7 @@
 body {
   background: rgb(var(--color-black));
   color: rgb(var(--color-white));
+  font-family: var(--font-body);
   font-size: 16px;
 }
 
