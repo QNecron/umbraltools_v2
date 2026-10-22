@@ -3,12 +3,13 @@
   /* fonts */
   --font-body: sans-serif;
   --font-heading: "Oswald", sans-serif;
+  --font-technical: monospace;
 
   /* colors */
   --color-black: 17, 17, 17;
   --color-white: 238, 238, 238;
 
-  --color-yellow: 250, 152, 58;
+  --color-orange: 250, 152, 58;
   --color-red: 235, 47, 6;
   --color-blue: 30, 55, 153;
   --color-teal: 60, 99, 130;

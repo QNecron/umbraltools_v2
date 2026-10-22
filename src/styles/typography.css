@@ -30,6 +30,26 @@
   --heading-font-size: var(--size-16);
 }
 
+.technical {
+  --tech-color: var(--color-red);
+  --tech-display: inline-block;
+  --tech-font-family: var(--font-technical);
+  --tech-font-size: .75rem;
+  --tech-letter-spacing: var(--size-02);
+  --tech-line-height: 1;
+  --tech-margin: var(--size-02);
+  --tech-vertical-align: top;
+
+  color: rgba(var(--tech-color));
+  display: var(--tech-display);
+  font-family: var(--tech-font-family);
+  font-size: var(--tech-font-size);
+  letter-spacing: var(tech-letter-spacing);
+  line-height: var(--tech-line-height);
+  margin-top: var(--tech-margin);
+  vertical-align: var(--tech-vertical-align);
+}
+
 .srt {
   clip: rect(1px, 1px, 1px, 1px);
   height: 1px;

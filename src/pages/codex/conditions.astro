@@ -1,0 +1,43 @@
+---
+import Page from '../../components/Page.astro';
+import Section from '../../components/Section.astro';
+import Grid from '../../components/Grid.astro';
+import Card from '../../components/Card.astro';
+
+import Conditions from '../../data/conditions.json';
+
+---
+
+<Page 
+  metaTitle="Conditions | Umbral Tools" 
+  metaDescription="Additional rules and information for your ShadowDark campaign."
+>
+
+  <Section id="conditions" title="Conditions">
+
+    <Grid desktop="3" tablet="3">
+
+      {Conditions.map((data) => {
+
+        // get any text with brackets [] and add the <b> tag
+        const copy_1 = data.effect_1.replace(/(\[.*?\])/g, '<b class="technical">$1</b>');
+        const copy_2 = data.effect_2.replace(/(\[.*?\])/g, '<b class="technical">$1</b>');
+
+        if(data) {
+          return(
+            <Card 
+              card="minimal"
+              title={data.name}
+              copy_1={<Fragment set:html={copy_1} />}
+              copy_2={<Fragment set:html={copy_2} />}
+            />
+          )
+        }
+
+      })}
+
+    </Grid>
+
+  </Section>
+
+</Page>

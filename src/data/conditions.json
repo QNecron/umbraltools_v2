@@ -1,62 +1,67 @@
 [
   {
     "name": "Blind",
-    "effect_1": "DC [X] CON or blinded.",
-    "effect_2": "Unable to see, DISADV on attack or spell casting checks, creatures have ADV when attacking."
+    "effect_1": "DC [x] CON or blinded.",
+    "effect_2": "Unable to see, DISADV on attack or spell casting checks, and creatures have ADV when attacking."
   },
   {
     "name": "Cancel",
-    "effect_1": "DC [X] DEX or magical suppression.",
+    "effect_1": "DC [x] DEX or magical suppression.",
     "effect_2": "All magical effects end."
   },
   {
     "name": "Charm",
-    "effect_1": "DC [X] CHA or become ally for [Duration].",
+    "effect_1": "DC [x] CHA or become ally for [duration].",
     "effect_2": "Act in a helpful manner."
   },
   {
     "name": "Confused",
-    "effect_1": "DC [X] WIS or confused for [Duration].",
+    "effect_1": "DC [x] WIS or confused for [duration].",
     "effect_2": "Confusion includes; attacking a random ally, walking around randomly."
   },
   {
     "name": "Death",
-    "effect_1": "DC [X] CON or drop to 0 HP.",
+    "effect_1": "DC [x] CON or drop to 0 HP.",
     "effect_2": "Death timer of 1 round."
   },
   {
     "name": "Disease",
-    "effect_1": "DC [X] CON or diseased.",
+    "effect_1": "DC [x] CON or diseased.",
     "effect_2": "Repeat check once per day; ends on success, reapplied on failure."
   },
   {
     "name": "Drain",
-    "effect_1": "[X] [Attribute] damage.",
-    "effect_2": "Death if reduced to 0 [Attribute]."
+    "effect_1": "[x] [attribute] damage.",
+    "effect_2": "Death if reduced to 0 [attribute]."
   },
   {
     "name": "Paralyze",
-    "effect_1": "DC [X] CON or paralyzed.",
+    "effect_1": "DC [x] CON or paralyzed.",
     "effect_2": "Unable to act or move, creatures have ADV when attacking."
   },
   {
     "name": "Petrify",
-    "effect_1": "DC [X] CON or petrified.",
+    "effect_1": "DC [x] CON or petrified.",
     "effect_2": "Unable to act or move, only curable by Restoration or Wish."
   },
   {
     "name": "Poison",
-    "effect_1": "DC [X] CON or poisoned.",
+    "effect_1": "DC [x] CON or poisoned.",
     "effect_2": "Secondary effects include; damage, death, paralyze, and sleep."
   },
   {
     "name": "Polymorph",
-    "effect_1": "DC [X] INT or polymorphed for [Duration].",
+    "effect_1": "DC [x] INT or polymorphed for [duration].",
     "effect_2": "Turned into vermin."
   },
   {
+    "name": "Prone",
+    "effect_1": "DC [x] STR or knocked down.",
+    "effect_2": "Movement is expended when standing, creatures have ADV when attacking."
+  },
+  {
     "name": "Sleep",
-    "effect_1": "DC [X] WIS or asleep.",
+    "effect_1": "DC [x] WIS or asleep.",
     "effect_2": "Unable to act or move, creatures automatically crit when attacking."
   }
 ]
