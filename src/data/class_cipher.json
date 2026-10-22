@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Cipher",
+    "description": "Ciphers are uncommon and often misunderstood individuals with extraordinary mental abilities. Like priests and wizards they're able to cast devastating spells, however, ciphers manifest spells through mental prowess alone.",
+    "weapons": "Club, Crossbow, Dagger, Mace, Shortsword, Shortbow, Spear",
+    "armors": "Leather armor and shields",
+    "hit_dice": "1d4 per level",
+    "languages": "You gain telepathy within near",
+    "traits": {
+      "ranges": ["2", "3-6", "7-9", "10-11", "12"],
+      "1": "Gain advantage on casting one spell you know",
+      "2": "+1 to melee and ranged attacks",
+      "3": "+1 to cipher spellcasting checks",
+      "4": "+2 to Strength, Dexterity, or Charisma stat",
+      "5": "Choose a talent or +2 points to distribute to stats"
+    },
+    "specials": [
+      {
+        "name": "Psychic Leech",
+        "description": "You're attacks are more focused. You receive a bonus to melee and ranged attack rolls equal to half your level (minimum of 1)."
+      }
+    ],
+    "spellcasting": {
+      "name": "Psionics",
+      "casting": "To cast a cipher spell you know, make a spellcasting check by rolling 1d20 + your Charisma modifier. The DC to successfully cast a spell is 10 + the spell's tier.",
+      "starting": "You know two tier 1 spells of your choice from the cipher spell list as well as the Telekinesis spell (cipher version).",
+      "progression": "Each time you gain a level, you choose new cipher spells to learn according to the Cipher Spells Known table below.",
+      "table": "Spells Known",
+      "tier": [1, 2, 3, 4, 5],
+      "level_1": [2],
+      "level_2": [3],
+      "level_3": [3, 1],
+      "level_4": [3, 2],
+      "level_5": [3, 2, 1],
+      "level_6": [3, 2, 2],
+      "level_7": [3, 3, 2, 1],
+      "level_8": [3, 3, 2, 2],
+      "level_9": [3, 3, 2, 2, 1],
+      "level_10": [3, 3, 3, 2, 2]
+    }
+  }
+]
