@@ -1,5 +1,10 @@
 [
   {
+    "name": "Blind",
+    "effect_1": "DC [X] CON or blinded.",
+    "effect_2": "Unable to see, DISADV on attack or spell casting checks, creatures have ADV when attacking."
+  },
+  {
     "name": "Cancel",
     "effect_1": "DC [X] DEX or magical suppression.",
     "effect_2": "All magical effects end."

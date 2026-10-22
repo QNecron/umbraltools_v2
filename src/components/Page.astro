@@ -18,6 +18,9 @@ interface Props {
 }
 
 const { metaTitle, metaDescription } = Astro.props;
+
+const url = Astro.url.pathname.replace("/", "");
+const page = url !== "" ? url : "home";
 ---
 
 <html lang="en">
@@ -27,7 +30,7 @@ const { metaTitle, metaDescription } = Astro.props;
     <Fonts />
 	</head>
 
-	<body id="body" class="body">
+	<body id="body" class={"body " + page}>
 
     <Header nav={Nav} />
 
