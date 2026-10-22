@@ -4,7 +4,8 @@
   --header-border: none;
   --header-box-shadow: var(--box-shadow-close);
   --header-padding: var(--size-16) 0;
-  --header-top: 0;
+  --header-position: sticky;
+  --header-inset: 0 auto auto auto;
 
   --header-nav-gap: var(--size-02);
 
@@ -13,9 +14,15 @@
   border-bottom: var(--header-border);
   box-shadow: var(--header-box-shadow);
   padding: var(--header-padding);
-  position: sticky;
-  top: var(--header-top);
+  position: var(--header-position);
+  inset: var(--header-inset);
   z-index: 7;
+
+  .home:has(.header) & {
+    --header-position: fixed;
+    --header-inset: 0 0 auto 0;
+  }
+  
 }
 
 .header__nav {
