@@ -30,17 +30,17 @@
     "effect_2": "Death if reduced to 0 [Attribute]."
   },
   {
-    "namne": "Paralyze",
+    "name": "Paralyze",
     "effect_1": "DC [X] CON or paralyzed.",
     "effect_2": "Unable to act or move, creatures have ADV when attacking."
   },
   {
-    "namne": "Petrify",
+    "name": "Petrify",
     "effect_1": "DC [X] CON or petrified.",
     "effect_2": "Unable to act or move, only curable by Restoration or Wish."
   },
   {
-    "namne": "Poison",
+    "name": "Poison",
     "effect_1": "DC [X] CON or poisoned.",
     "effect_2": "Secondary effects include; damage, death, paralyze, and sleep."
   },
