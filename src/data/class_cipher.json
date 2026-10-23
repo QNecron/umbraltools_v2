@@ -9,15 +9,15 @@
     "traits": [
       {
         "range": "2",
-        "bonus": "Gain advantage on casting one spell you know"
+        "bonus": "Add a melee or ranged weapon to your proficiency list"
       },
       {
         "range": "3-6",
-        "bonus": "+1 to melee and ranged attacks"
+        "bonus": "+1 to cipher spellcasting checks"
       },
       {
         "range": "7-9",
-        "bonus": "+1 to cipher spellcasting checks"
+        "bonus": "Gain advantage on casting one spell you know"
       },
       {
         "range": "10-11",
@@ -30,27 +30,33 @@
     ],
     "specials": [
       {
-        "name": "Psychic Leech",
-        "description": "You're attacks are more focused. You receive a bonus to melee and ranged attack rolls equal to half your level (minimum of 1)."
+        "name": "Focused Mind",
+        "description": "You gain +1 to melee and ranged attacks. In addition, add half your level to these rolls (round down)."
       }
     ],
-    "spellcasting": {
-      "name": "Psionics",
-      "casting": "To cast a cipher spell you know, make a spellcasting check by rolling 1d20 + your Charisma modifier. The DC to successfully cast a spell is 10 + the spell's tier.",
-      "starting": "You know two tier 1 spells of your choice from the cipher spell list as well as the Telekinesis spell (cipher version).",
-      "progression": "Each time you gain a level, you choose new cipher spells to learn according to the Cipher Spells Known table below.",
-      "table": "Spells Known",
-      "tier": [1, 2, 3, 4, 5],
-      "level_1": [2],
-      "level_2": [3],
-      "level_3": [3, 1],
-      "level_4": [3, 2],
-      "level_5": [3, 2, 1],
-      "level_6": [3, 2, 2],
-      "level_7": [3, 3, 2, 1],
-      "level_8": [3, 3, 2, 2],
-      "level_9": [3, 3, 2, 2, 1],
-      "level_10": [3, 3, 3, 2, 2]
-    }
+    "spellcasting": [
+      {
+        "name": "Psionics",
+        "casting": "To cast a cipher spell you know, make a spellcasting check by rolling 1d20 + your Charisma modifier. The DC to successfully cast a spell is 10 + the spell's tier.",
+        "starting": "You know two tier 1 spells of your choice from the cipher spell list as well as the Telekinesis spell (cipher version).",
+        "progression": "Each time you gain a level, you choose new cipher spells to learn according to the Cipher Spells Known table below."
+      }
+    ],
+    "spell_table": [
+      {
+        "name": "Spells Known",
+        "tier": [1, 2, 3, 4, 5],
+        "level_1": [2, 0, 0, 0, 0],
+        "level_2": [3, 0, 0, 0, 0],
+        "level_3": [3, 1, 0, 0, 0],
+        "level_4": [3, 2, 0, 0, 0],
+        "level_5": [3, 2, 1, 0, 0],
+        "level_6": [3, 2, 2, 0, 0],
+        "level_7": [3, 3, 2, 1, 0],
+        "level_8": [3, 3, 2, 2, 0],
+        "level_9": [3, 3, 2, 2, 1],
+        "level_10": [3, 3, 3, 2, 2]        
+      }
+    ]
   }
 ]

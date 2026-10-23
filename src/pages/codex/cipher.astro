@@ -5,11 +5,41 @@ import Grid from '../../components/Grid.astro';
 import Card from '../../components/Card.astro';
 
 import Cipher from '../../data/class_cipher.json';
+
+const spellTiers: number[] = Cipher.flatMap(data => 
+  data.spell_table.flatMap(tier => tier.tier)
+);
+
+interface Levels {
+  level_1?: number[];
+  level_2?: number[];
+  level_3?: number[];
+  level_4?: number[];
+  level_5?: number[];
+  level_6?: number[];
+  level_7?: number[];
+  level_8?: number[];
+  level_9?: number[];
+  level_10?: number[];
+}
+
+type SpellLevels = `spellLevel${1|2|3|4|5|6|7|8|9|10}`;
+
+const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, lvl) => {
+  const lvls = `level_${lvl}` as keyof Levels;
+  const spellLvls = `${lvl}` as SpellLevels;
+
+  acc[spellLvls] = Cipher.flatMap(data => 
+    data.spell_table.flatMap(spells => spells[lvls] ?? [])
+  );
+
+  return acc;
+}, {} as Record<SpellLevels, number[]>);
 ---
 
 <Page 
   metaTitle="Cipher | Umbral Tools" 
-  metaDescription="Additional class for your ShadowDark campaign."
+  metaDescription="The Cipher class for your ShadowDark campaign."
 >
 
   <Section id="conditions" title="Cipher">
@@ -44,7 +74,31 @@ import Cipher from '../../data/class_cipher.json';
               </table>
             </div>
             <div class="right">
-              Right
+              {data.specials.map((special) => (
+                <p><strong>{special.name}</strong></p>
+                <p>{special.description}</p>
+              ))}
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="6">
+                      {data.spell_table.map(table => table.name)}
+                    </th>
+                  </tr>
+                  <tr>
+                    <th>Levels</th>
+                    {spellTiers.map((levels) => <th>{levels}</th>)}
+                  </tr>
+                  {Object.entries(SpellsPerLevel).map(([levels, numbers]) => (
+                    <tr>
+                      <th>{levels}</th>
+                      {numbers.map((num) => (
+                        <td>{num === 0 ? "-" : num}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </thead>
+              </table>
             </div>
           )
         }
