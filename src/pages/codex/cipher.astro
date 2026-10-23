@@ -1,0 +1,58 @@
+---
+import Page from '../../components/Page.astro';
+import Section from '../../components/Section.astro';
+import Grid from '../../components/Grid.astro';
+import Card from '../../components/Card.astro';
+
+import Cipher from '../../data/class_cipher.json';
+---
+
+<Page 
+  metaTitle="Cipher | Umbral Tools" 
+  metaDescription="Additional class for your ShadowDark campaign."
+>
+
+  <Section id="conditions" title="Cipher">
+
+    <Grid desktop="2" tablet="2" mobile="1">
+
+      {Cipher.map((data) => {
+
+        if(data) {
+          return(
+            <div class="left">
+              <p>{data.description}</p>
+              <p><strong>Weapons:</strong> {data.weapons}</p>
+              <p><strong>Armors:</strong> {data.armors}</p>
+              <p><strong>Hit Points</strong>: {data.hit_dice}</p>
+              <p><strong>Languages:</strong> {data.languages}</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table__header">Roll</th>
+                    <th class="table__header">Trait</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.traits.map((trait) => (
+                    <tr>
+                      <th>{trait.range}</th>
+                      <td>{trait.bonus}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div class="right">
+              Right
+            </div>
+          )
+        }
+
+      })}
+
+    </Grid>
+
+  </Section>
+
+</Page>

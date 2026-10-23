@@ -6,14 +6,28 @@
     "armors": "Leather armor and shields",
     "hit_dice": "1d4 per level",
     "languages": "You gain telepathy within near",
-    "traits": {
-      "ranges": ["2", "3-6", "7-9", "10-11", "12"],
-      "1": "Gain advantage on casting one spell you know",
-      "2": "+1 to melee and ranged attacks",
-      "3": "+1 to cipher spellcasting checks",
-      "4": "+2 to Strength, Dexterity, or Charisma stat",
-      "5": "Choose a talent or +2 points to distribute to stats"
-    },
+    "traits": [
+      {
+        "range": "2",
+        "bonus": "Gain advantage on casting one spell you know"
+      },
+      {
+        "range": "3-6",
+        "bonus": "+1 to melee and ranged attacks"
+      },
+      {
+        "range": "7-9",
+        "bonus": "+1 to cipher spellcasting checks"
+      },
+      {
+        "range": "10-11",
+        "bonus": "+2 to Strength, Dexterity, or Charisma stat"
+      },
+      {
+        "range": "12",
+        "bonus": "Choose a talent or +2 points to distribute to stats"
+      }
+    ],
     "specials": [
       {
         "name": "Psychic Leech",
