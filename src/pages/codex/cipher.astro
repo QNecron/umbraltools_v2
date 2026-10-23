@@ -60,7 +60,7 @@ const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, 
                 <thead>
                   <tr>
                     <th class="table__header">Roll</th>
-                    <th class="table__header">Trait</th>
+                    <th>Trait</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -72,11 +72,8 @@ const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, 
                   ))}
                 </tbody>
               </table>
-            </div>
-            <div class="right">
               {data.specials.map((special) => (
-                <p><strong>{special.name}</strong></p>
-                <p>{special.description}</p>
+                <p><strong>{special.name}.</strong> {special.description}</p>
               ))}
               <table class="table">
                 <thead>
@@ -85,8 +82,10 @@ const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, 
                       {data.spell_table.map(table => table.name)}
                     </th>
                   </tr>
+                </thead>
+                <tbody>
                   <tr>
-                    <th>Levels</th>
+                    <th class="table__header">Levels</th>
                     {spellTiers.map((levels) => <th>{levels}</th>)}
                   </tr>
                   {Object.entries(SpellsPerLevel).map(([levels, numbers]) => (
@@ -97,8 +96,50 @@ const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, 
                       ))}
                     </tr>
                   ))}
-                </thead>
+                </tbody>
               </table>
+            </div>
+            <div class="right">
+              <p><strong>Critical Failure.</strong> {data.spell_mishap}</p>
+              {data.mishap_table.map((table) => (
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">{table.name}</th>
+                    </tr>
+                    <tr>
+                      <th class="table__header">d6</th>
+                      <th>Effect</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>{table.roll_1}</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>{table.roll_2}</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>{table.roll_3}</td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>{table.roll_4}</td>
+                    </tr>
+                    <tr>
+                      <th>5</th>
+                      <td>{table.roll_5}</td>
+                    </tr>
+                    <tr>
+                      <th>6</th>
+                      <td>{table.roll_6}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              ))}
             </div>
           )
         }

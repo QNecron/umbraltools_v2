@@ -19,8 +19,8 @@ interface Props {
 
 const { metaTitle, metaDescription } = Astro.props;
 
-const url = Astro.url.pathname.replace("/", "");
-const page = url !== "" ? url : "home";
+const url = Astro.url.pathname;
+const page = url === "" ? "home" : "page";
 ---
 
 <html lang="en">

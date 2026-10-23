@@ -30,6 +30,12 @@
   --heading-font-size: var(--size-16);
 }
 
+p ~ p {
+  --p-margin: var(--size-24);
+
+  margin-top: var(--p-margin);
+}
+
 .technical {
   --tech-color: var(--color-red);
   --tech-display: inline-block;

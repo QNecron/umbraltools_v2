@@ -57,6 +57,36 @@
         "level_9": [3, 3, 2, 2, 1],
         "level_10": [3, 3, 3, 2, 2]        
       }
+    ],
+    "spell_mishap": "If you roll a natural 1 on your spellcasting check you can't cast that spell again until you successfully complete a rest. You must also roll on the Cipher Mishap table corresponding to the spell's tier (see below).",
+    "mishap_table": [
+      {
+        "name": "Mishap Tier 1-2",
+        "roll_1": "Devastation! Roll twice and combine effects (reroll 1)",
+        "roll_2": "Psionic backlash! You take 1d8 damage",
+        "roll_3": "Broken mind! You can't cast the spell again for a week",
+        "roll_4": "The horror! You scream uncontrollably for 3 rounds",
+        "roll_5": "Psychic surge! You glow bright blue for 10 rounds, ADV",
+        "roll_6": "Unstable mind! Disadvantage on spell casting for 3 rounds"
+      },
+      {
+        "name": "Mishap Tier 3-4",
+        "roll_1": "Devastation! Roll twice and combine effects (reroll 1)",
+        "roll_2": "Psionic blast! You and all within near take 2d6 damage",
+        "roll_3": "Brain hemorrhage! Pass DC15 CON or take 4 INT, WIS, and CHR damage",
+        "roll_4": "Stupefaction! You lose the ability to cast spells for 10 rounds",
+        "roll_5": "Madness! DC12 WIS or descend into mad raving for 2d6 rounds",
+        "roll_6": "Feebleminded! Disadvantage on spell casting for 3 hours"
+      },
+      {
+        "name": "Mishap Tier 5",
+        "roll_1": "Devastation! Roll twice and combine effects (reroll 1)",
+        "roll_2": "Psychic vampire! Drain 1d4 CHR from all within near, take damage equal to drain",
+        "roll_3": "Mind over matter! Attacks against you deal 2x damage",
+        "roll_4": "Déjà vu! Self spells target random creature within near",
+        "roll_5": "What lurks beyond the veil! DC15 WIS check madness 1d4 hours",
+        "roll_6": "Mental reset! Disadvantage on spell casting for 24 hours"
+      }
     ]
   }
 ]
