@@ -1,0 +1,40 @@
+---
+import Page from '../components/Page.astro';
+import Section from '../components/Section.astro';
+import Grid from '../components/Grid.astro';
+import Card from '../components/Card.astro';
+
+import Feats from '../data/feats.json';
+
+---
+
+<Page 
+  metaTitle="Feats | Umbral Tools" 
+  metaDescription="Additional feats for your ShadowDark campaign."
+>
+
+  <Section id="feats" title="Feats">
+
+    <Grid desktop="3" tablet="3">
+
+      {Feats.map((data) => {
+
+        if(data) {
+          return(
+            <Card 
+              classes={data.type}
+              card="minimal"
+              title={data.name}
+              copy_1={data.description}
+              copy_2={data.action}
+            />
+          )
+        }
+
+      })}
+
+    </Grid>
+
+  </Section>
+
+</Page>

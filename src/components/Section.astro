@@ -22,7 +22,7 @@ const Heading = heading === 'h1' ? 'h1' : 'h2';
   id={id} 
   class="section" 
   data-section={props} 
-  aria-labelledby={id + '-title'}
+  aria-labelledby={id + '_title'}
   role="region"
 >
 
@@ -30,7 +30,7 @@ const Heading = heading === 'h1' ? 'h1' : 'h2';
 
     {title && 
       <Heading 
-        id={id + '-title'} 
+        id={id + '_title'} 
         class="section__title" 
         data-heading="2"
       >

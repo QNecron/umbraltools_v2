@@ -1,0 +1,110 @@
+[
+  {
+    "name": "Cleaving Attack",
+    "description": "Attack close enemies in front of you.",
+    "action": "action",
+    "type": "combat"
+  },
+  {
+    "name": "Improved Critical",
+    "description": "Crit on 19+ with a chosen weapon or spell.",
+    "action": "passive",
+    "type": "combat magical"
+  },
+  {
+    "name": "Precise Attack",
+    "description": "-1 to damage rolls, +3 to attack rolls.",
+    "action": "action",
+    "type": "combat"
+  },
+  {
+    "name": "Power Attack",
+    "description": "-1 to attack rolls, +3 to damage rolls.",
+    "action": "action",
+    "type": "combat"
+  },
+  {
+    "name": "Shield Other",
+    "description": "Close ally gains a bonus to AC equal to your shields for one round.",
+    "action": "action",
+    "type": "combat"
+  },
+  {
+    "name": "Shield Slam",
+    "description": "Use your move action to attack with shield.",
+    "action": "action",
+    "type": "combat"
+  },
+  {
+    "name": "Combat Casting",
+    "description": "+1 to spell casting checks. +2 at level 4 and then +3 at level 8.",
+    "action": "passive",
+    "type": "magical"
+  },
+  {
+    "name": "Embue Spell",
+    "description": "+1 DC to spell casting check, store spell in a weapon or ammunition for up to 1 hour.",
+    "action": "action",
+    "type": "magical"
+  },
+  {
+    "name": "Empower Spell",
+    "description": "+1 DC to spell casting check, +1 dice added to spell.",
+    "action": "action",
+    "type": "magical"
+  },
+  {
+    "name": "Initiate",
+    "description": "Learn a tier 1 spell from any spell list.",
+    "action": "passive",
+    "type": "magical"
+  },
+  {
+    "name": "Transform Spell",
+    "description": "+1 DC to spell casting check, change spell's damage type.",
+    "action": "action",
+    "type": "magical"
+  },
+  {
+    "name": "Quicken Spell",
+    "description": "+3 DC to spell casting check, use your move action to cast a spell.",
+    "action": "action",
+    "type": "magical"
+  },
+  {
+    "name": "Complex Person",
+    "description": "+1 background experience, cannot conflict with existing background.",
+    "action": "passive",
+    "type": "general"
+  },
+  {
+    "name": "Diehard",
+    "description": "+3 rounds to your death timer when ununconscious.",
+    "action": "passive",
+    "type": "general"
+  },
+  {
+    "name": "Lucky",
+    "description": "+1 Luck Token after a rest.",
+    "action": "passive",
+    "type": "general"
+  },
+  {
+    "name": "Polygot",
+    "description": "+1 common language known.",
+    "action": "passive",
+    "type": "general"
+  },
+  {
+    "name": "Talented",
+    "description": "Roll for an additional talent.",
+    "action": "passive",
+    "type": "general"   
+  },
+  {
+    "name": "Toughness",
+    "description": "+3 maximum hit points.",
+    "action": "passive",
+    "type": "general"
+  }
+]

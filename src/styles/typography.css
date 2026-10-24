@@ -30,6 +30,7 @@
   --heading-font-size: var(--size-16);
 }
 
+
 p ~ p {
   --p-margin: var(--size-24);
 
@@ -37,7 +38,7 @@ p ~ p {
 }
 
 .technical {
-  --tech-color: var(--color-red);
+  --tech-color: inherit;
   --tech-display: inline-block;
   --tech-font-family: var(--font-technical);
   --tech-font-size: .75rem;

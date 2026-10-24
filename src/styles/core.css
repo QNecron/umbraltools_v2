@@ -7,7 +7,7 @@ body {
 
 /* structure : wrapper */
 [data-wrapper] {
-  --wrapper-padding: var(--size-40);
+  --wrapper-padding: var(--size-32);
   --wrapper-max-width: 88rem; /* 1408 */
 
   margin-right: auto;
@@ -17,10 +17,10 @@ body {
   max-width: var(--wrapper-max-width);
 
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    --wrapper-padding: var(--size-32);
+    --wrapper-padding: var(--size-24);
   }
   @media only screen and (max-width: 767px) {
-    --wrapper-padding: var(--size-24);
+    --wrapper-padding: var(--size-16);
   }
 
 }
