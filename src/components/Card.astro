@@ -6,6 +6,8 @@ interface Props {
   copy_1?: string | number;
   copy_2?: string | number;
   copy_3?: string | number;
+  copy_4?: string | number;
+  copy_5?: string | number;
 }
 
 const { 
@@ -14,12 +16,14 @@ const {
   title,
   copy_1,
   copy_2,
-  copy_3
+  copy_3,
+  copy_4,
+  copy_5
 } = Astro.props;
 ---
 
 <div class={classes ? "card " + classes : "card"} data-card={card}>
-  {(title || copy_1 || copy_2 || copy_3) &&
+  {(title || copy_1 || copy_2 || copy_3 || copy_4 || copy_5) &&
     <div class="card__content">
       {title && 
         <h3 class="card__title" data-heading="4">{title}</h3>
@@ -32,6 +36,12 @@ const {
       }
       {copy_3 && 
         <div class="card__copy-3">{copy_3}</div>
+      }
+      {copy_4 && 
+        <div class="card__copy-4">{copy_4}</div>
+      }
+      {copy_5 && 
+        <div class="card__copy-5">{copy_5}</div>
       }
     </div>
   }

@@ -1,0 +1,152 @@
+[
+  {
+    "name": "Eyestrike",
+    "tier": "1",
+    "class": "cipher",
+    "duration": "1 round",
+    "range": "near",
+    "description": "Targeted creature's eyes become dull white blinding them for 1 round and dealing 1d4 damage."
+  },
+  {
+    "name": "Mind Blast",
+    "tier": "1",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "Projecting a mental wave you deal 1d4 damage to a target and push them away close distance."
+  },
+  {
+    "name": "Psychic Backlash",
+    "tier": "1",
+    "class": "cipher",
+    "duration": "10 rounds",
+    "range": "near",
+    "description": "Your mental abilities disrupt normal spellcasting, the first time an enemy creature casts a spell within near it gains disadvantage."
+  },
+  {
+    "name": "Psychic Shockwave",
+    "tier": "1",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "self",
+    "description": "Amplifying the target creature's mental state you cause 1d4 damage to all creatures within close of the target."
+  },
+  {
+    "name": "Psychovampiric Touch",
+    "tier": "1",
+    "class": "cipher",
+    "duration": "5 rounds",
+    "range": "close",
+    "description": "Focusing your mental abilities you reach out dealing 1d4 damage and gaining the damage dealt as weapon damage for 5 rounds."
+  },
+  {
+    "name": "Whisper of Treason",
+    "tier": "1",
+    "class": "cipher",
+    "duration": "1 round",
+    "range": "near",
+    "description": "Your words fill a target creatures mind causing it attack an ally on its next turn."
+  },
+
+
+
+  {
+    "name": "Amplified Thrust",
+    "tier": "2",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "A focused wave of mental energy strikes a target creature for 1d6 damage, a secondary creature within half near of the target takes 1d12 damage."   
+  },
+  {
+    "name": "Mental Binding",
+    "tier": "2",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "A mental stasis is put in place, all enemy creaures within near that are LVL 3 and below are paralyzed for the spell's duration."   
+  },
+  {
+    "name": "Mind Blades",
+    "tier": "2",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "You project a psionic blade that jumps from target to target, up to 5 times, dealing 1d4 damage."
+  },
+  {
+    "name": "Psychovampiric Shield",
+    "tier": "2",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "close",
+    "description": "Focusing your mental abilities you reach out dealing 1d6 damage and gaining the damage dealt as AC for the spell's duration."
+  },
+  {
+    "name": "Recall Agony",
+    "tier": "2",
+    "class": "cipher",
+    "duration": "1 round",
+    "range": "far",
+    "description": "You make a creature relive its most recent trauma, for the spell's duration if that creature is damage they take an additional 1d6."
+  },
+  {
+    "name": "Reveal Secrets",
+    "tier": "2",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "You pry into the mind of a target creature, DC12 CHA save or have a secret revealed. A successful save reveals your intentions."
+  },
+
+
+
+  {
+    "name": "Fractured Violition",
+    "tier": "3",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "Tricking the target creature into believing they're weak you reduce all their physical damage by 50% for the spell's duration."
+  },
+  {
+    "name": "Pain Link",
+    "tier": "3",
+    "class": "cipher",
+    "duration": "5 rounds",
+    "range": "near",
+    "description": "Syncing mental waves with a creature, all damage dealt is split in half and applied to the both of you for the spell's duration."
+  },
+  {
+    "name": "Psychovampiric Leech",
+    "tier": "3",
+    "class": "cipher",
+    "duration": "5 rounds",
+    "range": "near",
+    "description": "Focusing your mental abilities you reach out dealing 1d8 point of damage and gaining the damage dealt as CHR for the spell's duration."
+  },
+  {
+    "name": "Puppet Master",
+    "tier": "3",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "Breaking the mental fortitude of a target creature you're able to control them for the spell's duration. Simplistic commands only."
+  },
+  {
+    "name": "Remove Memory",
+    "tier": "3",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "You pry into the mind of a target creature, DC13 CHA save or have a memory forgotten. A successful save reveals your intentions."
+  },
+  {
+    "name": "Soul Ignition",
+    "tier": "3",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "You cause an overbearing mental strain on a target creature, they take 3d4 damage then 3d4 damage each round for the spell's duration."
+  }
+]

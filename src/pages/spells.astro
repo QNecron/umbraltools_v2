@@ -1,0 +1,47 @@
+---
+import Page from '../components/Page.astro';
+import Section from '../components/Section.astro';
+import Grid from '../components/Grid.astro';
+import Card from '../components/Card.astro';
+
+import Spells from '../data/spells.json';
+
+---
+
+<Page 
+  metaTitle="Spells | Umbral Tools" 
+  metaDescription="Additional spells for your ShadowDark campaign."
+>
+
+  <Section id="spells" title="Spells">
+
+    <Grid desktop="3" tablet="3">
+
+      {Spells.map((data) => {
+
+        let spellClass = <> <strong>Class:</strong> {data.class} </>;
+        let spellDuration = <> <strong>Duration:</strong> {data.duration} </>;
+        let spellRange = <> <strong>Range:</strong> {data.range} </>;
+
+        if(data) {
+          return(
+            <Card 
+              classes={data.class}
+              card="spells"
+              title={data.name}
+              copy_1={data.tier}
+              copy_2={spellClass}
+              copy_3={spellDuration}
+              copy_4={spellRange}
+              copy_5={data.description}
+            />
+          )
+        }
+
+      })}
+
+    </Grid>
+
+  </Section>
+
+</Page>
