@@ -42,7 +42,7 @@ export default function Card({
       }
       <div className="card__content">
         <h2 className="card__title" data-heading="4">{title}</h2>
-        {badge && <div className="card__badge">{badge}</div>}
+        {badge && <div className="card__badge btn" data-btn="primary">{badge}</div>}
         {copy_1 && <div className="card__copy card__copy_1">{copy_1}</div>}
         {copy_2 && <div className="card__copy card__copy_2">{copy_2}</div>}
         {copy_3 && <div className="card__copy card__copy_3">{copy_3}</div>}

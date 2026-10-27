@@ -12,6 +12,7 @@
   border: var(--card-border);
   border-color: var(--card-border-color);
   padding: var(--card-padding);
+  position: relative;
 }
 
 .card__content {
@@ -25,6 +26,12 @@
 }
 
 [data-card="spells"] {
+
+  .card__badge {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+  }
 
   .card__copy_1,
   .card__copy_2,
