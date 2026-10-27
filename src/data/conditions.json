@@ -2,7 +2,7 @@
   {
     "name": "Blind",
     "effect_1": "DC [x] CON or blinded.",
-    "effect_2": "Unable to see, DISADV on attack or spell casting checks, and creatures have ADV when attacking."
+    "effect_2": "Unable to see, DISADV on attack and spell casting checks, and creatures have ADV when attacking."
   },
   {
     "name": "Cancel",
