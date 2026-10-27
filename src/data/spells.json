@@ -28,7 +28,7 @@
     "tier": "1",
     "class": "cipher",
     "duration": "instant",
-    "range": "self",
+    "range": "near",
     "description": "Amplifying the target creature's mental state you cause 1d4 damage to all creatures within close of the target."
   },
   {
@@ -47,9 +47,6 @@
     "range": "near",
     "description": "Your words fill a target creatures mind causing it attack an ally on its next turn."
   },
-
-
-
   {
     "name": "Amplified Thrust",
     "tier": "2",
@@ -98,9 +95,6 @@
     "range": "near",
     "description": "You pry into the mind of a target creature, DC12 CHA save or have a secret revealed. A successful save reveals your intentions."
   },
-
-
-
   {
     "name": "Fractured Violition",
     "tier": "3",
@@ -148,5 +142,101 @@
     "duration": "focus",
     "range": "near",
     "description": "You cause an overbearing mental strain on a target creature, they take 3d4 damage then 3d4 damage each round for the spell's duration."
+  },
+  {
+    "name": "Mind Lance",
+    "tier": "4",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "Focusing your will on a single devistating attack you deal 3d8 damage to a target creature."
+  },
+  {
+    "name": "Pain Block",
+    "tier": "4",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "You reach into a creature's mind and dulling their pain receptors, target gains resistance to all damage for the spell's duration."
+  },
+  {
+    "name": "Reaping Armament",
+    "tier": "4",
+    "class": "cipher",
+    "duration": "10 rounds",
+    "range": "near",
+    "description": "Through force of will alone you focus mental energy into the shape of a +2 magical weapon you're proficient with."
+  },
+  {
+    "name": "Silent Scream",
+    "tier": "4",
+    "class": "cipher",
+    "duration": "1 round",
+    "range": "near",
+    "description": "You cause the target creature to suffer a mental breakdown, they take 2d8 damage and are silenced for 1 round."
+  },
+  {
+    "name": "Telekinesis",
+    "tier": "4",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "You're able to lift a creature or object that weighs 1,000lbs or less with your mind. You can move it a near distance in any direction and hold it in place."
+  },
+  {
+    "name": "Tactical Meld",
+    "tier": "4",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "far",
+    "description": "You project a clear plan of attack to your allies, all weapon attacks have advantage against your target for spell's duration."
+  },
+  {
+    "name": "Amplified Wave",
+    "tier": "5",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "near",
+    "description": "Amplifying your ally's mental state, you cause 2d12 damage to any enemy creature within double close of the target."
+  },
+  {
+    "name": "Brain Hemorrhage",
+    "tier": "5",
+    "class": "cipher",
+    "duration": "instant",
+    "range": "far",
+    "description": "Overloading a target creature's mind with psychic energy you deal 3d8 damage, if the target is LVL 5 or lower it instantly dies."
+  },
+  {
+    "name": "Defensive Mind-Web",
+    "tier": "5",
+    "class": "cipher",
+    "duration": "10 rounds",
+    "range": "near",
+    "description": "Melding the minds of all allies within near, mind-affecting spells or abilities that allow a save get a group roll. Take the highest."
+  },
+  {
+    "name": "Go Between",
+    "tier": "5",
+    "class": "cipher",
+    "duration": "10 rounds",
+    "range": "far",
+    "description": "You focus your mental energies on a target creature, DC15 CHA save or you swap bodies. A successful save reveals your intentions."
+  },
+  {
+    "name": "Mind Plague",
+    "tier": "5",
+    "class": "cipher",
+    "duration": "focus",
+    "range": "near",
+    "description": "You create a psionic plague that jumps from target to target, up to 3 times, imposing disadvantage on all checks for the spell's duration."
+  },
+  {
+    "name": "Time Parasite",
+    "tier": "5",
+    "class": "cipher",
+    "duration": "5 rounds",
+    "range": "near",
+    "description": "You sap the mental energy from a target creature, for the spell's duration they are slowed and you are hasted."
   }
 ]
