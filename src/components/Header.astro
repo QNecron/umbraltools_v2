@@ -1,7 +1,6 @@
 ---
-import Dialog from './Dialog.astro';
-import DialogTrigger from './DialogTrigger.astro';
 import Wrapper from './Wrapper.astro';
+import Dialog from './Dialog.tsx';
 
 interface Props {
   nav: Array<{"name": string, "url": string}>;
@@ -26,28 +25,18 @@ const { nav } = Astro.props;
         />
       </a>
 
-      <DialogTrigger 
-        name="nav-primary" 
-        props="primary" 
-        title="Menu" 
-      />
+      <Dialog type="primary" triggerCopy="Menu" triggerButton="primary" client:load>
+        <nav class="nav-primary" role="navigation">
+          {nav.map((data) => 
+            <a href={data.url} class="btn nav-primary__link" data-button="primary">
+              {data.name}
+            </a>
+          )}
+        </nav>
+      </Dialog>
 
     </div>
 
   </Wrapper>
-
-  <Dialog name="nav-primary" props="primary">
-
-    <nav class="nav-primary" role="navigation">
-
-      {nav.map((data) => 
-        <a href={data.url} class="btn nav-primary__link" data-button="primary">
-          {data.name}
-        </a>
-      )}
-
-    </nav>
-
-  </Dialog>
 
 </header>

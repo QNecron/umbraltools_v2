@@ -1,8 +1,8 @@
 ---
 import Page from '../../components/Page.astro';
 import Section from '../../components/Section.astro';
-import Grid from '../../components/Grid.astro';
-import Card from '../../components/Card.astro';
+import Grid from '../../components/Grid.tsx';
+import Card from '../../components/Card.tsx';
 
 import Conditions from '../../data/conditions.json';
 ---
@@ -18,17 +18,13 @@ import Conditions from '../../data/conditions.json';
 
       {Conditions.map((data) => {
 
-        // get any text with brackets [] and add the <b> tag
-        const copy_1 = data.effect_1.replace(/(\[.*?\])/g, '<b class="technical">$1</b>');
-        const copy_2 = data.effect_2.replace(/(\[.*?\])/g, '<b class="technical">$1</b>');
-
         if(data) {
           return(
             <Card 
               card="minimal"
               title={data.name}
-              copy_1={<Fragment set:html={copy_1} />}
-              copy_2={<Fragment set:html={copy_2} />}
+              copy_1={data.effect_1}
+              copy_2={data.effect_2}
             />
           )
         }

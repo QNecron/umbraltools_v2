@@ -1,0 +1,16 @@
+.filters {
+  --filters-gap: var(--size-08);
+  --filters-margin: var(--size-16) 0 var(--size-16) auto;
+  --filters-width: 70%;
+  --filters-top: var(--size-16);
+
+  align-items: center;
+  display: flex;
+  gap: var(--filters-gap);
+  justify-content: flex-end;
+  margin: var(--filters-margin);
+  width: var(--filters-width);
+  position: sticky;
+  top: var(--filters-top);
+  z-index: 9;
+}

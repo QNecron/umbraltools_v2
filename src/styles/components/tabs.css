@@ -1,0 +1,33 @@
+.tabs {
+  --tabs-display: flex;
+  --tabs-gap: var(--size-08);
+  --tabs-padding: var(--size-16);
+  --tab-size: 33%;
+
+  display: var(--tabs-display);
+  flex-wrap: wrap;
+  gap: var(--tabs-gap);
+  padding-bottom: var(--tabs-padding);
+
+  &.condensed {
+    --tabs-gap: var(--size-04);
+    --tab-size: 15%;
+
+    > * {
+      max-width: var(--tab-size);
+    }
+  }
+
+  > * {
+    flex: 1 0 var(--tab-size);
+  }
+}
+
+.tabs__title {
+  --tabs-title-border: solid 1px rgba(var(--color-white), .08);
+  --tabs-title-spacing: var(--size-16);
+
+  border-bottom: var(--tabs-title-border);
+  margin-bottom: var(--tabs-title-spacing);
+  padding-bottom: var(--tabs-title-spacing);
+}

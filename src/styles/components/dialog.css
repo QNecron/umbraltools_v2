@@ -1,4 +1,3 @@
-/* component : dialog */
 .dialog {
   --dialog-backdrop-filter: blur(var(--size-04));
   --dialog-background: rgba(var(--color-black), .64);
