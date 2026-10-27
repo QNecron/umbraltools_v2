@@ -2,7 +2,8 @@
 interface Props {
   classes?: string;
   card?: string;
-  title?: string;
+  title: string;
+  badge?: string | number;
   copy_1?: string | number;
   copy_2?: string | number;
   copy_3?: string | number;
@@ -14,6 +15,7 @@ const {
   classes,
   card = "", 
   title,
+  badge,
   copy_1,
   copy_2,
   copy_3,
@@ -22,27 +24,14 @@ const {
 } = Astro.props;
 ---
 
-<div class={classes ? "card " + classes : "card"} data-card={card}>
-  {(title || copy_1 || copy_2 || copy_3 || copy_4 || copy_5) &&
-    <div class="card__content">
-      {title && 
-        <h3 class="card__title" data-heading="4">{title}</h3>
-      }
-      {copy_1 && 
-        <div class="card__copy-1">{copy_1}</div>
-      }
-      {copy_2 && 
-        <div class="card__copy-2">{copy_2}</div>
-      }
-      {copy_3 && 
-        <div class="card__copy-3">{copy_3}</div>
-      }
-      {copy_4 && 
-        <div class="card__copy-4">{copy_4}</div>
-      }
-      {copy_5 && 
-        <div class="card__copy-5">{copy_5}</div>
-      }
-    </div>
-  }
-</div>
+<article class={classes ? "card " + classes : "card"} data-card={card}>
+  <div class="card__content">
+    <h3 class="card__title" data-heading="3">{title}</h3>
+    {badge && <div class="card__badge">{badge}</div>}
+    {copy_1 && <div class="card__copy-1">{copy_1}</div>}
+    {copy_2 && <div class="card__copy-2">{copy_2}</div>}
+    {copy_3 && <div class="card__copy-3">{copy_3}</div>}
+    {copy_4 && <div class="card__copy-4">{copy_4}</div>}
+    {copy_5 && <div class="card__copy-5">{copy_5}</div>}
+  </div>
+</article>
