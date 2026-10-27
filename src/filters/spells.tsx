@@ -16,33 +16,27 @@ export default function Spells() {
   const [caster, casterUpdate] = useState("*");
   const [level, levelUpdate] = useState("1");
 
+  const Filters = [
+    {id: 'class', title: 'Class', data: DataCasters, state: caster, update: casterUpdate, condensed: false},
+    {id: 'tier', title: 'Tier', data: DataTiers, state: level, update: levelUpdate, condensed: true},
+    {id: 'name', title: 'Name', data: DataAlpha, state: alpha, update: alphaUpdate, condensed: true},
+  ];
+
   return(
     <>
-    <nav className="filters" aria-label="Item filters" role="navigation">
+    <nav className="filters" aria-label="Spell filters" role="navigation">
       <Dialog type="secondary" triggerCopy="Filters" triggerButton="primary">
-        <Tabs 
-          data={DataCasters} 
-          state={caster} 
-          update={casterUpdate}
-        >
-          <h3 className="tabs__title" data-heading="5">Class</h3>
-        </Tabs>
-        <Tabs 
-          classes="condensed" 
-          data={DataTiers} 
-          state={level} 
-          update={levelUpdate}
-        >
-          <h3 className="tabs__title" data-heading="5">Tier</h3>
-        </Tabs>
-        <Tabs 
-          classes="condensed" 
-          data={DataAlpha} 
-          state={alpha} 
-          update={alphaUpdate}
-        >
-          <h3 className="tabs__title" data-heading="5">Name</h3>
-        </Tabs>
+        {Filters.map(({ id, title, data, state, update, condensed}) => (
+          <Tabs
+            key={id}
+            classes={condensed ? "condensed" : undefined}
+            data={data}
+            state={state}
+            update={update}
+          >
+            <h3 className="tabs__title" data-heading="5">{title}</h3>
+          </Tabs>
+        ))}
       </Dialog>
     </nav>
     <Grid desktop="3" tablet="3" mobile="1">
@@ -53,13 +47,13 @@ export default function Spells() {
         let levelFilter = spell.tier;
                 
         // alphabetical filter
-        if (alphaFilter !== alpha && alpha !== "*") return null;
+        if(alphaFilter !== alpha && alpha !== "*") return null;
                 
         // caster filter
-        if (casterFilter !== caster && caster !== "*") return null;
+        if(casterFilter !== caster && caster !== "*") return null;
                 
         // level filter
-        if (levelFilter !== level && level !== "*") return null;
+        if(levelFilter !== level && level !== "*") return null;
 
         let spellClass = <> <strong>Class:</strong> {spell.class} </>;
         let spellDuration = <> <strong>Duration:</strong> {spell.duration} </>;
