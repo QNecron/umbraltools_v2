@@ -1,6 +1,6 @@
 .filters {
   --filters-gap: var(--size-08);
-  --filters-margin: var(--size-16) 0 var(--size-16) auto;
+  --filters-margin: 0 0 var(--size-16) auto;
   --filters-width: 70%;
   --filters-top: var(--size-16);
 

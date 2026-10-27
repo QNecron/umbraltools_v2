@@ -1,8 +1,8 @@
 ---
 import Page from '../components/Page.astro';
 import Section from '../components/Section.astro';
-import Grid from '../components/Grid.astro';
-import Card from '../components/Card.astro';
+import Grid from '../components/Grid.tsx';
+import Card from '../components/Card.tsx';
 
 import Feats from '../data/feats.json';
 ---
@@ -21,10 +21,9 @@ import Feats from '../data/feats.json';
         if(data) {
           return(
             <Card 
-              classes={data.type}
               card="feats"
               title={data.name}
-              copy_1={data.action}
+              badge={data.action}
               copy_5={data.description}
             />
           )

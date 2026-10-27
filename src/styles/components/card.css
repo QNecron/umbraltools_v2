@@ -8,8 +8,6 @@
   --card-content-flex-direction: column;
   --card-content-gap: var(--size-08);
 
-  --card-copy-color: rgba(var(--color-white), .56);
-
   border: var(--card-border);
   border-color: var(--card-border-color);
   padding: var(--card-padding);
@@ -19,11 +17,4 @@
   display: var(--card-content-display);
   flex-direction: var(--card-content-flex-direction);
   gap: var(--card-content-gap);
-}
-
-.card__copy-1,
-.card__copy-2,
-.card__copy-3,
-.card__copy-4 {
-  color: var(--card-copy-color);
 }
