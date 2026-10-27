@@ -19,9 +19,7 @@ export default function Spells() {
   return(
     <>
     <nav className="filters" aria-label="Item filters" role="navigation">
-          
       <Dialog type="secondary" triggerCopy="Filters" triggerButton="primary">
-            
         <Tabs 
           data={DataCasters} 
           state={caster} 
@@ -29,7 +27,6 @@ export default function Spells() {
         >
           <h3 className="tabs__title" data-heading="5">Class</h3>
         </Tabs>
-            
         <Tabs 
           classes="condensed" 
           data={DataTiers} 
@@ -38,7 +35,6 @@ export default function Spells() {
         >
           <h3 className="tabs__title" data-heading="5">Tier</h3>
         </Tabs>
-            
         <Tabs 
           classes="condensed" 
           data={DataAlpha} 
@@ -47,9 +43,7 @@ export default function Spells() {
         >
           <h3 className="tabs__title" data-heading="5">Name</h3>
         </Tabs>
-          
       </Dialog>
-          
     </nav>
     <Grid desktop="3" tablet="3" mobile="1">
       {DataSpells.sort((a, b) => a.name < b.name ? -1 : 1).map((spell, index) => {
@@ -74,6 +68,7 @@ export default function Spells() {
         return(
           <Card
             key={index}
+            card="spells"
             title={spell.name}
             badge={spell.tier}
             copy_1={spellClass}

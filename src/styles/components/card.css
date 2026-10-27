@@ -1,12 +1,13 @@
 .card {
   --card-border: solid var(--size-01);
   --card-border-color: rgba(var(--color-white), .08);
-
   --card-padding: var(--size-16);
 
   --card-content-display: flex;
   --card-content-flex-direction: column;
   --card-content-gap: var(--size-08);
+
+  --card-content-copy-font-size: var(--size-16);
 
   border: var(--card-border);
   border-color: var(--card-border-color);
@@ -17,4 +18,25 @@
   display: var(--card-content-display);
   flex-direction: var(--card-content-flex-direction);
   gap: var(--card-content-gap);
+}
+
+.card__copy {
+  font-size: var(--card-content-copy-font-size);
+}
+
+[data-card="spells"] {
+
+  .card__copy_1,
+  .card__copy_2,
+  .card__copy_3 {
+    --card-content-copy-font-size: var(--size-12);
+    text-transform: capitalize
+  }
+
+  .card__copy_5 {
+    border-top: solid var(--size-01) rgba(var(--color-white), .08);
+    margin-top: var(--size-08);
+    padding-top: var(--size-16);
+  }
+
 }

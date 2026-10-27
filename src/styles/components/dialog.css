@@ -1,6 +1,6 @@
 .dialog {
-  --dialog-backdrop-filter: blur(var(--size-04));
-  --dialog-background: rgba(var(--color-black), .64);
+  --dialog-backdrop-filter: blur(var(--size-08));
+  --dialog-background: rgba(var(--color-black), .72);
   --dialog-box-shadow: var(--box-shadow-close);
   --dialog-font-color: inherit;
   --dialog-padding: var(--size-32);

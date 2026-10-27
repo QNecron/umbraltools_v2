@@ -4,7 +4,7 @@
   --heading-font-size: var(--size-56);
   --heading-font-weight: 300;
   --heading-letting-spacing: var(--size-02);
-  --heading-line-height: 1.5;
+  --heading-line-height: 1;
 
   font-family: var(--heading-font-family);
   font-size: var(--heading-font-size);

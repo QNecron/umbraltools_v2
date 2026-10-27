@@ -1,7 +1,7 @@
 .tabs {
   --tabs-display: flex;
   --tabs-gap: var(--size-08);
-  --tabs-padding: var(--size-16);
+  --tabs-padding: var(--size-32);
   --tab-size: 33%;
 
   display: var(--tabs-display);

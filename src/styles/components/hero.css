@@ -2,7 +2,7 @@
   --hero-content-align-items: center;
   --hero-content-display: flex;
   --hero-content-flex-direction: column;
-  --hero-content-gap: 0;
+  --hero-content-gap: var(--size-16);
   --hero-content-justify-content: center;
   --hero-content-text-shadow: var(--text-shadow-close);
   --hero-content-position: absolute;
