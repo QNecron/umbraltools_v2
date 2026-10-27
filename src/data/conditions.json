@@ -11,13 +11,18 @@
   },
   {
     "name": "Charm",
-    "effect_1": "DC [x] CHA or become ally for [duration].",
-    "effect_2": "Act in a helpful manner."
+    "effect_1": "DC [x] CHA or become ally to charmer.",
+    "effect_2": "Act in a helpful manner to charmer."
   },
   {
     "name": "Confused",
-    "effect_1": "DC [x] WIS or confused for [duration].",
+    "effect_1": "DC [x] WIS or confused.",
     "effect_2": "Confusion includes; attacking a random ally, walking around randomly."
+  },
+  {
+    "name": "Dazed",
+    "effect_1": "DC [x] WIS or dazzled.",
+    "effect_2": "DISADV on attack and spell casting checks."
   },
   {
     "name": "Death",
@@ -51,7 +56,7 @@
   },
   {
     "name": "Polymorph",
-    "effect_1": "DC [x] INT or polymorphed for [duration].",
+    "effect_1": "DC [x] INT or polymorphed.",
     "effect_2": "Turned into vermin."
   },
   {
@@ -63,5 +68,10 @@
     "name": "Sleep",
     "effect_1": "DC [x] WIS or asleep.",
     "effect_2": "Unable to act or move, creatures automatically crit when attacking."
+  },
+  {
+    "name": "Slow",
+    "effect_1": "DC [x] WIS or slowed.",
+    "effect_2": "Movement speed is halved, only able to move or attack. Not both."
   }
 ]

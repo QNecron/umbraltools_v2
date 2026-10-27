@@ -25,25 +25,41 @@
   font-size: var(--card-content-copy-font-size);
 }
 
+[data-card="conditions"] {
+
+  .card__copy_1 {
+    border-top: solid var(--size-01) rgba(var(--color-white), .08);
+    margin-top: var(--size-08);
+    padding-top: var(--size-16);
+  }
+
+}
+
+[data-card="feats"],
 [data-card="spells"] {
 
   .card__badge {
+    font-size: var(--size-12);
     position: absolute;
     top: -1px;
     right: -1px;
-  }
-
-  .card__copy_1,
-  .card__copy_2,
-  .card__copy_3 {
-    --card-content-copy-font-size: var(--size-12);
-    text-transform: capitalize
   }
 
   .card__copy_5 {
     border-top: solid var(--size-01) rgba(var(--color-white), .08);
     margin-top: var(--size-08);
     padding-top: var(--size-16);
+  }
+
+}
+
+[data-card="spells"] {
+
+  .card__copy_1,
+  .card__copy_2,
+  .card__copy_3 {
+    --card-content-copy-font-size: var(--size-12);
+    text-transform: capitalize
   }
 
 }
