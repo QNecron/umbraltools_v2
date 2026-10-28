@@ -13,7 +13,7 @@ export default function Feats() {
   const [alpha, alphaUpdate] = useState("*");
   const [type, typeUpdate] = useState("general");
 
-  const FeatTypes = ["combat", "magical", "general", "*"];
+  const FeatTypes = ["general", "combat", "magical", "*"];
 
   const Filters = [
     {id: 'type', title: 'Type', data: FeatTypes, state: type, update: typeUpdate, condensed: false},

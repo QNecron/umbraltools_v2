@@ -1,19 +1,19 @@
-import Clipboard from "../../public/icons/clipboard.svg?url";
-import Close from "../../public/icons/close.svg?url";
-import Copy from "../../public/icons/copy.svg?url";
-import Dice from "../../public/icons/dice.svg?url";
-import Download from "../../public/icons/cloud-download.svg?url";
-import Upload from "../../public/icons/cloud-upload.svg?url";
-import Flame from "../../public/icons/flame.svg?url";
-import Save from "../../public/icons/save.svg?url";
-import Delete from "../../public/icons/trash.svg?url";
-import Search from "../../public/icons/search.svg?url";
-import Reader from "../../public/icons/reader.svg?url";
-import Character from "../../public/icons/characters.svg?url";
-import Shield from "../../public/icons/shield.svg?url";
-import Timer from "../../public/icons/timer.svg?url";
-import Settings from "../../public/icons/settings.svg?url";
-import MagicWand from "../../public/icons/magic-wand.svg?url";
+import Clipboard from "/icons/clipboard.svg?url";
+import Close from "/icons/close.svg?url";
+import Copy from "/icons/copy.svg?url";
+import Dice from "/icons/dice.svg?url";
+import Download from "/icons/cloud-download.svg?url";
+import Upload from "/icons/cloud-upload.svg?url";
+import Flame from "/icons/flame.svg?url";
+import Save from "/icons/save.svg?url";
+import Delete from "/icons/trash.svg?url";
+import Search from "/icons/search.svg?url";
+import Reader from "/icons/reader.svg?url";
+import Character from "/icons/characters.svg?url";
+import Shield from "/icons/shield.svg?url";
+import Timer from "/icons/timer.svg?url";
+import Settings from "/icons/settings.svg?url";
+import MagicWand from "/icons/magic-wand.svg?url";
 
 interface Props {
   icon: string;
