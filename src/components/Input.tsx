@@ -5,7 +5,7 @@ interface Props {
   value?: string;
   min?: number;
   max?: number;
-  change: () => void;
+  change: (event: React.ChangeEvent<HTMLInputElement>) => void;
   checked?: boolean;
   disabled?: boolean;
   label: string;

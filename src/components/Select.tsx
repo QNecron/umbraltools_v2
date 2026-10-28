@@ -1,7 +1,7 @@
 interface Props {
   id: string;
   value?: string;
-  change: () => void;
+  change: (event: React.ChangeEvent<HTMLSelectElement>) => void;
   disabled?: boolean;
   children?: React.ReactNode;
   label: string;

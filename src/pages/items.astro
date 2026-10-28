@@ -1,6 +1,7 @@
 ---
 import Page from '../components/Page.astro';
 import Section from '../components/Section.astro';
+import ItemCreator from '../creators/item.tsx';
 ---
 
 <Page 
@@ -9,6 +10,8 @@ import Section from '../components/Section.astro';
 >
 
   <Section id="items" title="Items">
+
+    <ItemCreator client:load />
 
   </Section>
 
