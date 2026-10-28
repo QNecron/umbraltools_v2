@@ -2,7 +2,7 @@ interface Props {
   id: string;
   type: 'checkbox' | 'file' | 'number' | 'radio' | 'search' | 'text';
   accept?: string;
-  value?: string;
+  value?: string | number;
   min?: number;
   max?: number;
   change: (event: React.ChangeEvent<HTMLInputElement>) => void;

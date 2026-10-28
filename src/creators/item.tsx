@@ -6,7 +6,34 @@ import Select from '../components/Select.tsx';
 export default function ItemCreator() {
 
   const [name, nameUpdate] = useState("");
+  const [weapon, weaponUpdate] = useState("None");
+  const [bonus, bonusUpdate] = useState("0");
   const [prefix, prefixUpdate] = useState("");
+
+  interface ItemWpns {
+    name: string;
+    damage: string;
+    type: string;
+    range: string;
+    properties: string;
+  }
+
+  const ItemWeapons: ItemWpns[] = [
+    {
+      name: "Longsword",
+      damage: "d8",
+      type: "M",
+      range: "C",
+      properties: "-"
+    },
+    {
+      name: "Shortsword",
+      damage: "d6",
+      type: "M",
+      range: "C",
+      properties: "-"
+    }
+  ];
 
   interface ItemProps {
     name: string;
@@ -16,12 +43,6 @@ export default function ItemCreator() {
   }
 
   const ItemProperties: ItemProps[] = [
-    {
-      "name": "",
-      "damage": "",
-      "type": "",
-      "bonus": 0
-    },
     {
       "name": "Corrosive",
       "damage": "d4",
@@ -56,11 +77,15 @@ export default function ItemCreator() {
     const itemProp = data.find((prop) => prop.name === property);
     const damageProp = itemProp ? itemProp.damage : "";
     const typeProp = itemProp ? itemProp.type: "";
+    if(damageProp !== "") damage = "+ " + damageProp + " (" + typeProp + ")";
+    return damage;
+  }
 
-    if(damageProp !== "") {
-      damage = "+ " + damageProp + " (" + typeProp + ")";
-    }
-
+  function WeaponDamage(name: string, data: ItemWpns[]): string {
+    let damage = "";
+    const itemProp = data.find((prop) => prop.name === name);
+    const damageProp = itemProp ? itemProp.damage : "";
+    if(damageProp !== "") damage = damageProp;
     return damage;
   }
 
@@ -76,6 +101,32 @@ export default function ItemCreator() {
       }
     />
     <Select 
+      id="weapon"
+      value={weapon}
+      label="Weapon"
+      change={(event: React.ChangeEvent<HTMLSelectElement>) =>
+        weaponUpdate(event.target.value)
+      }      
+    >
+      <option></option>
+      {ItemWeapons.map((props, index) => {
+        return(
+          <option key={index} value={props.name}>{props.name}</option>
+        );
+      })}
+    </Select>
+    <Input 
+      id="bonus" 
+      type="number" 
+      value={bonus} 
+      label="Bonus"
+      change={(event: React.ChangeEvent<HTMLInputElement>) =>
+        bonusUpdate(event.target.value)
+      }
+      min={0}
+      max={3}
+    />
+    <Select 
       id="property"
       value={prefix}
       label="Property"
@@ -83,6 +134,7 @@ export default function ItemCreator() {
         prefixUpdate(event.target.value)
       }      
     >
+      <option></option>
       {ItemProperties.map((props, index) => {
         return(
           <option key={index} value={props.name}>{props.name}</option>
@@ -91,9 +143,8 @@ export default function ItemCreator() {
     </Select>
     <ul>
       <li>Name: {name}</li>
-      <li>+1 {prefix ? prefix + " ": ""} Longsword</li>
-      <li>1d8 + 1 {ItemDamageProperty(prefix, ItemProperties)}</li>
-      <li><em>Assuming the weapon was a +1 Longsword.</em></li>
+      <li>Weapon: +{bonus} {prefix ? prefix + " ": ""} {weapon}</li>
+      <li>Damage: {bonus} + {WeaponDamage(weapon, ItemWeapons)} {ItemDamageProperty(prefix, ItemProperties)}</li>
     </ul>
     </>
   );
