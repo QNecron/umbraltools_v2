@@ -1,10 +1,7 @@
 ---
 import Page from '../components/Page.astro';
 import Section from '../components/Section.astro';
-import Grid from '../components/Grid.tsx';
-import Card from '../components/Card.tsx';
-
-import Feats from '../data/feats.json';
+import Feats from '../filters/feats.tsx';
 ---
 
 <Page 
@@ -14,25 +11,8 @@ import Feats from '../data/feats.json';
 
   <Section id="feats" title="Feats">
 
-    <Grid desktop="3" tablet="3">
-
-      {Feats.map((data) => {
-
-        if(data) {
-          return(
-            <Card 
-              card="feats"
-              title={data.name}
-              badge={data.action}
-              copy_5={data.description}
-            />
-          )
-        }
-
-      })}
-
-    </Grid>
-
+    <Feats client:load />
+    
   </Section>
 
 </Page>

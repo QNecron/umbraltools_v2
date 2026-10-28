@@ -9,7 +9,7 @@
     "name": "Improved Critical",
     "description": "Crit on 19+ with a chosen weapon or spell.",
     "action": "passive",
-    "type": "combat magical"
+    "type": "combat"
   },
   {
     "name": "Precise Attack",
@@ -68,7 +68,7 @@
   {
     "name": "Quicken Spell",
     "description": "+3 DC to spell casting check, use your move action to cast a spell.",
-    "action": "action",
+    "action": "move",
     "type": "magical"
   },
   {
