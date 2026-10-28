@@ -1,6 +1,7 @@
 .card {
   --card-border: solid var(--size-01);
   --card-border-color: rgba(var(--color-white), .08);
+  --card-box-shadow: var(--box-shadow-close);
   --card-padding: var(--size-16);
 
   --card-content-display: flex;
@@ -11,6 +12,7 @@
 
   border: var(--card-border);
   border-color: var(--card-border-color);
+  box-shadow: var(--card-box-shadow);
   padding: var(--card-padding);
   position: relative;
 }
