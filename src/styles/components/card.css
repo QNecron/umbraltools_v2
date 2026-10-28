@@ -5,7 +5,7 @@
 
   --card-content-display: flex;
   --card-content-flex-direction: column;
-  --card-content-gap: var(--size-08);
+  --card-content-gap: var(--size-16);
 
   --card-content-copy-font-size: var(--size-16);
 
@@ -29,7 +29,6 @@
 
   .card__copy_1 {
     border-top: solid var(--size-01) rgba(var(--color-white), .08);
-    margin-top: var(--size-08);
     padding-top: var(--size-16);
   }
 
@@ -47,7 +46,6 @@
 
   .card__copy_5 {
     border-top: solid var(--size-01) rgba(var(--color-white), .08);
-    margin-top: var(--size-08);
     padding-top: var(--size-16);
   }
 
