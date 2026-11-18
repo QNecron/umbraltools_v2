@@ -54,11 +54,11 @@ export default function Feats() {
         return(
           <Card
             key={index}
-            card="spells"
+            card="feats"
             title={feat.name}
             badge={feat.type}
             copy_1={featAction}
-            copy_5={feat.description}
+            copy_4={feat.description}
           />
         );
 

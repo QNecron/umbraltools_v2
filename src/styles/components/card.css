@@ -37,6 +37,7 @@
 }
 
 [data-card="feats"],
+[data-card="items"],
 [data-card="spells"] {
 
   .card__badge {
@@ -46,20 +47,30 @@
     right: -1px;
   }
 
-  .card__copy_5 {
+  .card__copy_4 {
     border-top: solid var(--size-01) rgba(var(--color-white), .08);
     padding-top: var(--size-16);
   }
 
 }
 
+[data-card="feats"],
+[data-card="items"],
 [data-card="spells"] {
 
   .card__copy_1,
   .card__copy_2,
   .card__copy_3 {
     --card-content-copy-font-size: var(--size-12);
-    text-transform: capitalize
+    /* text-transform: capitalize */
   }
 
+}
+
+[data-card="spells"] {
+  .card__copy_1,
+  .card__copy_2,
+  .card__copy_3 {
+    text-transform: capitalize
+  }
 }

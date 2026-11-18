@@ -68,7 +68,7 @@ export default function Spells() {
             copy_1={spellClass}
             copy_2={spellDuration}
             copy_3={spellRange}
-            copy_5={spell.description}
+            copy_4={spell.description}
           />
         );
 

@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Potion of Extirpation",
+    "description": "An acrid, tarry substance in an iron flask with a lead stopper.",
+    "benefit": "You can pour the potion on one object or creature filling up to a close area. The target is utterly removed from reality and cannot be returned by anything short of a wish spell.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Flying",
+    "description": "A sunny liquid with bubbles that flash and pop like tiny stars.",
+    "benefit": "You can fly a near distance when you drink this potion.",
+    "duration": "10 Rounds",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Forgetfulness",
+    "description": "A pink draught that swirls with a counter-clockwise current.",
+    "benefit": "If you serve this potion to an intelligent being and that being drinks it, the imbiber permanently forgets one memory of your choosing.",
+    "duration": "Permanent",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Healing",
+    "description": "A glass bottle with a fizzy, lemon-vanilla liquid inside.",
+    "benefit": "The imbiber of this potion regains hit points based on their level. 0-3: 1d6 hit points, 4-6: 2d8 hit points, 7-9: 3d10 hit points, and 10+: 4d12 hit points.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Invisibility",
+    "description": "This glass vial appears to be empty, but a liquid audibly splashes around inside it.",
+    "benefit": "When you drink this potion, you become invisible until you attack or cast a spell.",
+    "duration": "10 Rounds",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Legendary Deeds",
+    "description": "A golden elixir that resonates with a faint, angelic chord.",
+    "benefit": "When you drink this potion, you gain one level and your XP total resets to zero.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Polymorph",
+    "description": "A pickled newt floats in this lavender flask of clear liquid",
+    "benefit": "When you drink this potion, it casts the polymorph spell on you.",
+    "duration": "1 Hour",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Vitality",
+    "description": "A crimson elixir that gently thumps with a heartbeat.",
+    "benefit": "When you drink this potion, roll your class's hit points die. You permanently gain that many HP.",
+    "curse": "If you drink more than one Potion of Vitality in your lifetime, you must pass a DC18 CON check each time or die instantly.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  }
+]

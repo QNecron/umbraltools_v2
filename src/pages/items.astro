@@ -1,7 +1,8 @@
 ---
 import Page from '../components/Page.astro';
 import Section from '../components/Section.astro';
-import ItemCreator from '../creators/item.tsx';
+import Items from '../filters/items.tsx';
+// import ItemCreator from '../creators/item.tsx';
 ---
 
 <Page 
@@ -11,7 +12,7 @@ import ItemCreator from '../creators/item.tsx';
 
   <Section id="items" title="Items">
 
-    <ItemCreator client:load />
+    <Items client:load />
 
   </Section>
 
