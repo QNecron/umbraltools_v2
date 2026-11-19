@@ -1,96 +1,64 @@
 [
   {
-    "name": "Bladeguard",
-    "description": "",
-    "benefit": "This clear resin protects a weapon from harmful attacks made by oozes and rust monsters, as well as other corrosive effects.",
-    "duration": "24 hours",
-    "cost": "4gp",
-    "type": "alchemical"
-  },
-  {
-    "name": "Fire Ward Gel",
-    "description": "",
-    "benefit": "When applied it creates a resistant barrier that protects from fire, reduces all fire damage by 3.",
-    "duration": "1 hour",
-    "cost": "2gp",
-    "type": "alchemical"
-  },
-  {
-    "name": "Frost Ward Gel",
-    "description": "",
-    "benefit": "When applied it creates a resistant barrier that protects from cold, reduces all cold damage by 3.",
-    "duration": "1 hour",
-    "cost": "2gp",
-    "type": "alchemical"
-  },
-  {
-    "name": "Smelling Salts",
-    "description": "",
-    "benefit": "These sharply scented gray crystals cause people inhaling them to regain consciousness.",
-    "duration": "Instant",
-    "cost": "8sp",
-    "type": "alchemical"
-  },
-  {
-    "name": "Troll Oil",
-    "description": "",
-    "benefit": "This crimson liquid is viscous and foul, drinking it stablizes you should you fall to 0 hit points.",
-    "duration": "1 hour",
-    "cost": "16gp",
-    "type": "alchemical"
-  },
-  {
-    "name": "Wismuth Salix",
-    "description": "",
-    "benefit": "This pink liquid has a horrible chalky taste, but counteracts the effects of nausea and sickness.",
-    "duration": "1 hour",
-    "cost": "8sp",
-    "type": "alchemical"
-  },
-  {
-    "name": "Alchemist's Acid",
-    "description": "",
-    "benefit": "Volatile liquids swirl chaotically in the flask, when thrown deals 1d3 acid damage to a target creature or object.",
+    "name": "Acid Flask",
+    "description": "Volatile green and yellow liquids swirl chaotically in the flask.",
+    "benefit": "When thrown deals 1d3 acid damage to a target creature or object.",
     "duration": "Instant",
     "cost": "8sp",
     "type": "alchemical"
   },
   {
     "name": "Alchemist's Fire",
-    "description": "",
-    "benefit": "Volatile liquids swirl chaotically in the flask, when thrown deals 1d3 fire damage to a target creature or object.",
+    "description": "Volatile red and orange liquids swirl chaotically in the flask",
+    "benefit": "When thrown deals 1d3 fire damage to a target creature or object.",
     "duration": "Instant",
     "cost": "8sp",
     "type": "alchemical"
   },
   {
     "name": "Bottled Lightning",
-    "description": "",
-    "benefit": "Electricity crackles slong a metal filament inside this small glass bottle, when thrown deals 1d3 electrical damage to target creature.",
+    "description": "Electricity crackles slong a metal filament inside this small glass bottle.",
+    "benefit": "When thrown deals 1d3 electrical damage to target creature.",
     "duration": "Instant",
     "cost": "8sp",
     "type": "alchemical"
   },
   {
     "name": "Flash Powder",
-    "description": "",
-    "benefit": "This coarse gray powder ignites and burns instantly, when thrown DC11 CON or creature is blinded.",
+    "description": "Coarse gray powder ignites and burns instantly.",
+    "benefit": "When thrown DC11 CON or creature is blinded.",
     "duration": "1 round",
     "cost": "8sp",
     "type": "alchemical"
   },
   {
     "name": "Holy Water",
-    "description": "",
-    "benefit": "Pure waster mixed with silver flakes, when thrown deals 1d6 damage to undead creatures.",
+    "description": "Pure water mixed with silver and gold flakes.",
+    "benefit": "When thrown deals 1d6 damage to undead creatures.",
     "duration": "Instant",
     "cost": "2gp",
     "type": "alchemical"
   },
   {
+    "name": "Liquid Ice",
+    "description": "Sealed jar that contains crystalline blue fluid that starts to evaporate once opened.",
+    "benefit": "When thrown deals 1d3 cold damage to target creature.",
+    "duration": "Instant",
+    "cost": "8sp",
+    "type": "alchemical"
+  },
+  {
+    "name": "Smelling Salts",
+    "description": "Sharply scented gray and pink crystals.",
+    "benefit": "Causes people inhaling them to regain consciousness.",
+    "duration": "Instant",
+    "cost": "8sp",
+    "type": "alchemical"
+  },
+  {
     "name": "Tanglefoot Bag",
-    "description": "",
-    "benefit": "This small sack is filled with tar and other sticky substances, when thrown DC11 DEX or creature is held in place.",
+    "description": "This small sack is filled with tar, resin, and other sticky substances.",
+    "benefit": "When thrown DC11 DEX or creature is held in place.",
     "duration": "1 round",
     "cost": "8sp",
     "type": "alchemical"

@@ -2,7 +2,7 @@
   --card-border: solid var(--size-01);
   --card-border-color: rgba(var(--color-white), .08);
   --card-box-shadow: var(--box-shadow-close);
-  --card-padding: var(--size-16);
+  --card-padding: var(--size-32);
 
   --card-content-display: flex;
   --card-content-flex-direction: column;
@@ -41,6 +41,7 @@
 [data-card="spells"] {
 
   .card__badge {
+    pointer-events: none;
     font-size: var(--size-12);
     position: absolute;
     top: -1px;
@@ -62,15 +63,16 @@
   .card__copy_2,
   .card__copy_3 {
     --card-content-copy-font-size: var(--size-12);
-    /* text-transform: capitalize */
   }
 
 }
 
 [data-card="spells"] {
+
   .card__copy_1,
   .card__copy_2,
   .card__copy_3 {
     text-transform: capitalize
   }
+  
 }

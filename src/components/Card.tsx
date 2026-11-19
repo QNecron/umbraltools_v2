@@ -10,6 +10,7 @@ interface Props {
   copy_3?: string | number | React.ReactNode;
   copy_4?: string | number | React.ReactNode;
   copy_5?: string | number | React.ReactNode;
+  copy_6?: string | number | React.ReactNode;
 }
 
 export default function Card({
@@ -23,7 +24,8 @@ export default function Card({
   copy_2,
   copy_3,
   copy_4,
-  copy_5
+  copy_5,
+  copy_6
 }: Props) {
 
   return(
@@ -48,6 +50,7 @@ export default function Card({
         {copy_3 && <div className="card__copy card__copy_3">{copy_3}</div>}
         {copy_4 && <div className="card__copy card__copy_4">{copy_4}</div>}
         {copy_5 && <div className="card__copy card__copy_5">{copy_5}</div>}
+        {copy_6 && <div className="card__copy card__copy_6">{copy_6}</div>}
       </div>
     </article>
   );

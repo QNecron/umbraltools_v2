@@ -26,7 +26,7 @@
   {
     "name": "Potion of Healing",
     "description": "A glass bottle with a fizzy, lemon-vanilla liquid inside.",
-    "benefit": "The imbiber of this potion regains hit points based on their level. 0-3: 1d6 hit points, 4-6: 2d8 hit points, 7-9: 3d10 hit points, and 10+: 4d12 hit points.",
+    "benefit": "The imbiber of this potion regains hit points based on their level. 1d6 hit points (0-3), 2d8 hit points (4-6), 3d10 hit points (7-9), 4d12 hit points (10+).",
     "duration": "Instant",
     "cost": "",
     "type": "consumable"
