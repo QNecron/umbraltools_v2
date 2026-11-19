@@ -34,7 +34,7 @@
   {
     "name": "Potion of Invisibility",
     "description": "This glass vial appears to be empty, but a liquid audibly splashes around inside it.",
-    "benefit": "When you drink this potion, you become invisible until you attack or cast a spell.",
+    "benefit": "When you drink this potion you become invisible until you attack or cast a spell.",
     "duration": "10 Rounds",
     "cost": "",
     "type": "consumable"
@@ -42,7 +42,7 @@
   {
     "name": "Potion of Legendary Deeds",
     "description": "A golden elixir that resonates with a faint, angelic chord.",
-    "benefit": "When you drink this potion, you gain one level and your XP total resets to zero.",
+    "benefit": "When you drink this potion you gain one level and your XP total resets to zero.",
     "duration": "Instant",
     "cost": "",
     "type": "consumable"
@@ -50,7 +50,7 @@
   {
     "name": "Potion of Polymorph",
     "description": "A pickled newt floats in this lavender flask of clear liquid",
-    "benefit": "When you drink this potion, it casts the polymorph spell on you.",
+    "benefit": "When you drink this potion it casts the polymorph spell on you.",
     "duration": "1 Hour",
     "cost": "",
     "type": "consumable"
@@ -61,6 +61,70 @@
     "benefit": "When you drink this potion, roll your class's hit points die. You permanently gain that many HP.",
     "curse": "If you drink more than one Potion of Vitality in your lifetime, you must pass a DC18 CON check each time or die instantly.",
     "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Mental Prowess",
+    "description": "A vibrant pink and purple liquid swirls, even when sitting still.",
+    "benefit": "When you drink this potion your mental stats; intelligence, wisdom, and charisma, are increased by 1.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Mental Perfection",
+    "description": "A vibrant pink and red liquid swirls, even when sitting still.",
+    "benefit": "When you drink this potion your mental stats; intelligence, wisdom, and charisma, are increased by 2.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Physical Prowess",
+    "description": "A vibrant cyan and purple liquid swirls, even when sitting still.",
+    "benefit": "When you drink this potion your physical stats; strength, dexterity, and constitution, are increased by 1.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Physical Perfection",
+    "description": "A vibrant cyan and blue liquid swirls, even when sitting still.",
+    "benefit": "When you drink this potion your physical stats; strength, dexterity, and constitution, are increased by 2.",
+    "duration": "Instant",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Wraith Sight",
+    "description": "The container barely contains the smokey black substance as it expands and shrinks.",
+    "benefit": "When you drink this potion you're able to see living creatures, invisible or otherwise.",
+    "duration": "5 Rounds",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Radiance",
+    "description": "Vibrant orange and white liquid emanates a soft glow.",
+    "benefit": "Glow brightly (up to near) for a short duration.",
+    "duration": "10 Rounds",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Heightened Understanding",
+    "description": "A verdant elixir that bubbles and smells of various herbs when opened.",
+    "benefit": "When you drink this potion you receive a +1 to spell casting checks.",
+    "duration": "5 Rounds",
+    "cost": "",
+    "type": "consumable"
+  },
+  {
+    "name": "Potion of Combat Expertise",
+    "description": "An azure elixir that bubbles and smells of various fruits when opened. ",
+    "benefit": "When you drink this potion you receive a +1 to attack rolls.",
+    "duration": "5 Rounds",
     "cost": "",
     "type": "consumable"
   }
