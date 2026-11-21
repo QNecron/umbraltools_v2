@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Amulet of Vitality",
+    "description": "A gold amulet with a red ruby teardrop at its center.",
+    "benefit": "Your Constitution stat increases by +2 while wearing this amulet.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "spell_casting": 0,
+    "attributes": {
+      "str": 0,
+      "dex": 0,
+      "con": 2,
+      "int": 0,
+      "wis": 0,
+      "chr": 0
+    },
+    "resistances": {
+      "physical": 0,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "neck"
+  },
+  {
+    "name": "Circlet of Wisdom",
+    "description": "A thin, silver circlet set with a shimmering, blue pearl.",
+    "benefit": "Your Wisdom stat increases by +2 while wearing this circlet.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "spell_casting": 0,
+    "attributes": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 2,
+      "chr": 0
+    },
+    "resistances": {
+      "physical": 0,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "head"
+  },
+  {
+    "name": "Gloves of Agility",
+    "description": "Thin, leather gloves that seem to meld with the wearer's hands.",
+    "benefit": "Your Dexterity stat increases by +2 while wearing these gloves.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "spell_casting": 0,
+    "attributes": {
+      "str": 0,
+      "dex": 2,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "chr": 0
+    },
+    "resistances": {
+      "physical": 0,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "arms"
+  },
+  {
+    "name": "Gauntlets of Might",
+    "description": "Heavy, bronze gauntlets with engravings of Herculean giants.",
+    "benefit": "Your Strength stat increases by +2 while wearing these gauntlets.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "spell_casting": 0,
+    "attributes": {
+      "str": 2,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "chr": 0
+    },
+    "resistances": {
+      "physical": 0,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "arms"
+  },
+  {
+    "name": "Hat of Intellect",
+    "description": "A floppy, pointed hat with a wide brim.",
+    "benefit": "Your Intelligence stat increases by +2 while wearing this hat.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "spell_casting": 0,
+    "attributes": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 2,
+      "wis": 0,
+      "chr": 0
+    },
+    "resistances": {
+      "physical": 0,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "head"
+  },
+  {
+    "name": "Necklace of Charm",
+    "description": "A gold, fishbone chain that shimmers with subtle beauty.",
+    "benefit": "Your Charisma stat increases by +2 while wearing this necklace.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "spell_casting": 0,
+    "attributes": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "chr": 2
+    },
+    "resistances": {
+      "physical": 0,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "neck"
+  }
+]

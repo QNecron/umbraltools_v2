@@ -9,6 +9,7 @@ import.meta.glob('../styles/components/*.css', { eager: false });
 import Meta from './Meta.astro';
 import Fonts from './Fonts.astro';
 import Header from './Header.astro';
+import Footer from './Footer.astro';
 
 import Nav from '../data/navigation.json';
 
@@ -37,6 +38,8 @@ const page = url === "" ? "home" : "page";
 		<main id="main" class="main" role="main">
       <slot />
     </main>
+
+    <Footer />
 
 	</body>
 

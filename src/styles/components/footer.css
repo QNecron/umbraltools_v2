@@ -1,0 +1,13 @@
+.footer {
+  --footer-spacing: var(--size-32);
+
+  --footer-copy-font-size: var(--size-12);
+  --footer-copy-text-align: center;
+
+  padding: var(--footer-spacing) 0;
+}
+
+.footer__copy {
+  font-size: var(--footer-copy-font-size);
+  text-align: var(--footer-copy-text-align);
+}

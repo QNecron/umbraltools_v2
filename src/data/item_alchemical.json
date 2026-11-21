@@ -5,7 +5,7 @@
     "benefit": "When thrown deals 1d3 acid damage to a target creature or object.",
     "duration": "Instant",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Alchemist's Fire",
@@ -13,7 +13,7 @@
     "benefit": "When thrown deals 1d3 fire damage to a target creature or object.",
     "duration": "Instant",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Bottled Lightning",
@@ -21,7 +21,7 @@
     "benefit": "When thrown deals 1d3 electrical damage to target creature.",
     "duration": "Instant",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Flash Powder",
@@ -29,7 +29,7 @@
     "benefit": "When thrown DC11 CON or creature is blinded.",
     "duration": "1 round",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Holy Water",
@@ -37,7 +37,7 @@
     "benefit": "When thrown deals 1d6 damage to undead creatures.",
     "duration": "Instant",
     "cost": "2gp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Liquid Ice",
@@ -45,7 +45,7 @@
     "benefit": "When thrown deals 1d3 cold damage to target creature.",
     "duration": "Instant",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Smelling Salts",
@@ -53,7 +53,7 @@
     "benefit": "Causes people inhaling them to regain consciousness.",
     "duration": "Instant",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   },
   {
     "name": "Tanglefoot Bag",
@@ -61,6 +61,6 @@
     "benefit": "When thrown DC11 DEX or creature is held in place.",
     "duration": "1 round",
     "cost": "8sp",
-    "type": "alchemical"
+    "filter": "alchemical"
   }
 ]

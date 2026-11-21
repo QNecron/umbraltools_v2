@@ -4,6 +4,8 @@ import DataAlpha from '../data/alphabet.json';
 import DataAlchemical from '../data/item_alchemical.json';
 import DataConsumable from '../data/item_consumables.json';
 import DataArmors from '../data/item_armors.json';
+import DataWeapons from '../data/item_weapons.json';
+import DataWondrous from '../data/item_wondrous.json';
 
 import ItemTypes from '../data/item_types.json';
 
@@ -19,13 +21,15 @@ interface DataProps {
   benefit?: string;
   additional?: string;
   curse?: string;
-  type: string;
+  filter: string;
 }
 
 const DataItems: DataProps[] = [
   ...DataAlchemical, 
   ...DataConsumable, 
-  ...DataArmors
+  ...DataArmors,
+  ...DataWeapons,
+  ...DataWondrous
 ];
 
 export default function Items() {
@@ -59,7 +63,7 @@ export default function Items() {
       {DataItems.sort((a, b) => a.name < b.name ? -1 : 1).map((item, index) => {
                 
         let alphaFilter = item.name.charAt(0);
-        let typeFilter = item.type;
+        let typeFilter = item.filter;
 
         // alphabetical filter
         if(alphaFilter !== alpha && alpha !== "*") return null;
@@ -67,34 +71,20 @@ export default function Items() {
         // type filter
         if(typeFilter !== type && type !== "*" || typeFilter === "-") return null;
 
-        let ItemBenefit = (
-          <>
-            <strong>Benefit.</strong> {item.benefit}
-          </>
-        );
-        
-        let ItemAdditional = (
-          <>
-            <strong>Additional.</strong> {item.additional}
-          </>
-        );
-
-        let ItemCurse = (
-          <>
-            <strong>Curse.</strong> {item.curse}
-          </>
-        );
+        let ItemBenefit = <> <strong>Benefit.</strong> {item.benefit} </>;
+        let ItemAdditional = <> <strong>Additional.</strong> {item.additional} </>;
+        let ItemCurse = <> <strong>Curse.</strong> {item.curse} </>;
                 
         return(
           <Card
             key={index}
             card="items"
             title={item.name}
-            badge={item.duration}
+            badge={item.duration ? item.duration : ""}
             copy_1={item.description}
-            copy_4={!item.benefit ? null : ItemBenefit}
-            copy_5={!item.additional ? null : ItemAdditional}
-            copy_6={!item.curse ? null : ItemCurse}
+            copy_4={item.benefit ? ItemBenefit : null}
+            copy_5={item.additional ? ItemAdditional : null}
+            copy_6={item.curse ? ItemCurse : null}
           />
         );
 

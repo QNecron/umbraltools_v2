@@ -7,7 +7,7 @@
     "properties": "-",
     "bonus": 0,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "Leather",
@@ -17,7 +17,7 @@
     "properties": "-",
     "bonus": 0,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "Chainmail",
@@ -27,7 +27,7 @@
     "properties": "Disadv on stealth, swim",
     "bonus": 0,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "Plate mail",
@@ -37,7 +37,7 @@
     "properties": "Disadv on stealth, no swim",
     "bonus": 0,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "+1 Robe",
@@ -47,7 +47,7 @@
     "properties": "-",
     "bonus": 1,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "+1 Leather",
@@ -57,7 +57,7 @@
     "properties": "-",
     "bonus": 1,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "+1 Chainmail",
@@ -67,7 +67,7 @@
     "properties": "Disadv on stealth, swim",
     "bonus": 1,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   },
   {
     "name": "+1 Plate mail",
@@ -77,6 +77,6 @@
     "properties": "Disadv on stealth, no swim",
     "bonus": 1,
     "source": "core",
-    "type": "-"
+    "filter": "-"
   }
 ]

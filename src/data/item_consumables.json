@@ -5,7 +5,7 @@
     "benefit": "You can pour the potion on one object or creature filling up to a close area. The target is utterly removed from reality and cannot be returned by anything short of a wish spell.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Flying",
@@ -13,7 +13,7 @@
     "benefit": "You can fly a near distance when you drink this potion.",
     "duration": "10 Rounds",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Forgetfulness",
@@ -21,7 +21,7 @@
     "benefit": "If you serve this potion to an intelligent being and that being drinks it, the imbiber permanently forgets one memory of your choosing.",
     "duration": "Permanent",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Healing",
@@ -29,7 +29,7 @@
     "benefit": "The imbiber of this potion regains hit points based on their level. 1d6 hit points (0-3), 2d8 hit points (4-6), 3d10 hit points (7-9), 4d12 hit points (10+).",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Invisibility",
@@ -37,7 +37,7 @@
     "benefit": "When you drink this potion you become invisible until you attack or cast a spell.",
     "duration": "10 Rounds",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Legendary Deeds",
@@ -45,7 +45,7 @@
     "benefit": "When you drink this potion you gain one level and your XP total resets to zero.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Polymorph",
@@ -53,7 +53,7 @@
     "benefit": "When you drink this potion it casts the polymorph spell on you.",
     "duration": "1 Hour",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Vitality",
@@ -62,7 +62,7 @@
     "curse": "If you drink more than one Potion of Vitality in your lifetime, you must pass a DC18 CON check each time or die instantly.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Mental Prowess",
@@ -70,7 +70,7 @@
     "benefit": "When you drink this potion your mental stats; intelligence, wisdom, and charisma, are increased by 1.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Mental Perfection",
@@ -78,7 +78,7 @@
     "benefit": "When you drink this potion your mental stats; intelligence, wisdom, and charisma, are increased by 2.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Physical Prowess",
@@ -86,7 +86,7 @@
     "benefit": "When you drink this potion your physical stats; strength, dexterity, and constitution, are increased by 1.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Physical Perfection",
@@ -94,7 +94,7 @@
     "benefit": "When you drink this potion your physical stats; strength, dexterity, and constitution, are increased by 2.",
     "duration": "Instant",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Wraith Sight",
@@ -102,7 +102,7 @@
     "benefit": "When you drink this potion you're able to see living creatures, invisible or otherwise.",
     "duration": "5 Rounds",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Radiance",
@@ -110,7 +110,7 @@
     "benefit": "Glow brightly (up to near) for a short duration.",
     "duration": "10 Rounds",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Heightened Understanding",
@@ -118,7 +118,7 @@
     "benefit": "When you drink this potion you receive a +1 to spell casting checks.",
     "duration": "5 Rounds",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   },
   {
     "name": "Potion of Combat Expertise",
@@ -126,6 +126,6 @@
     "benefit": "When you drink this potion you receive a +1 to attack rolls.",
     "duration": "5 Rounds",
     "cost": "",
-    "type": "consumable"
+    "filter": "consumable"
   }
 ]
