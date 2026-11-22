@@ -10,6 +10,9 @@
 
   --card-content-copy-font-size: var(--size-16);
 
+  --card-content-icons-display: flex;
+  --card-content-icon-gap: var(--size-02);
+
   border: var(--card-border);
   border-color: var(--card-border-color);
   box-shadow: var(--card-box-shadow);
@@ -27,6 +30,18 @@
   font-size: var(--card-content-copy-font-size);
 }
 
+.card__icons {
+  display: var(--card-content-icons-display);
+  gap: var(--card-content-icon-gap);
+}
+
+.card__actions {
+  border-top: solid var(--size-01) rgba(var(--color-white), .08);
+  font-size: var(--size-12);
+  padding-top: var(--size-16);
+  text-transform: capitalize
+}
+
 [data-card="conditions"] {
 
   .card__copy_1 {
@@ -41,7 +56,6 @@
 [data-card="spells"] {
 
   .card__badge {
-    pointer-events: none;
     font-size: var(--size-12);
     position: absolute;
     top: -1px;

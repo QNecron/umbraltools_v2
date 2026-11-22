@@ -1,5 +1,5 @@
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   gap?: string | number;
   desktop?: string | number;
   tablet?: string | number;

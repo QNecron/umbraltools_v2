@@ -15,6 +15,13 @@ import Timer from "/icons/timer.svg?url";
 import Settings from "/icons/settings.svg?url";
 import MagicWand from "/icons/magic-wand.svg?url";
 
+import Air from '/icons/element_air.png?url';
+import Earth from '/icons/element_earth.png?url';
+import Fire from '/icons/element_fire.png?url';
+import Water from '/icons/element_water.png?url';
+import Spirit from '/icons/element_spirit.svg?url';
+import Focus from '/icons/element_focus.svg?url';
+
 interface Props {
   icon: string;
   height?: number;
@@ -41,6 +48,12 @@ export default function Icons({ icon, height, width }: Props) {
     if (type === "timer") url = Timer;
     if (type === "settings") url = Settings;
     if (type === "wand") url = MagicWand;
+    if (type === "air") url = Air;
+    if (type === "earth") url = Earth;
+    if (type === "fire") url = Fire;
+    if (type === "water") url = Water;
+    if (type === "spirit") url = Spirit;
+    if (type === "focus") url = Focus;
     return url;
   };
 

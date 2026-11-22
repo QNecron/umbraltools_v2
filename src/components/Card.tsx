@@ -1,4 +1,5 @@
 interface Props {
+  children?: React.ReactNode;
   card?: string;
   image?: string;
   imageHeight?: number;
@@ -14,6 +15,7 @@ interface Props {
 }
 
 export default function Card({
+  children,
   card = "",
   image,
   imageHeight,
@@ -51,6 +53,7 @@ export default function Card({
         {copy_4 && <div className="card__copy card__copy_4">{copy_4}</div>}
         {copy_5 && <div className="card__copy card__copy_5">{copy_5}</div>}
         {copy_6 && <div className="card__copy card__copy_6">{copy_6}</div>}
+        {children}
       </div>
     </article>
   );

@@ -32,8 +32,8 @@
   height: var(--btn-height);
   width: var(--btn-width);
 
-  &:focus,
-  &:hover,
+  &:focus:not(div),
+  &:hover:not(div),
   &[aria-selected="true"] {
     --btn-background: rgba(var(--color-black), .88);
     --btn-border-color: rgba(var(--color-white), .32);

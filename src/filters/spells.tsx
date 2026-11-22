@@ -9,6 +9,7 @@ import Dialog from '../components/Dialog.tsx';
 import Grid from '../components/Grid.tsx';
 import Card from '../components/Card.tsx';
 import Tabs from '../components/Tabs.tsx';
+import Icons from "../components/Icons.tsx";
 
 export default function Spells() {
 
@@ -69,7 +70,27 @@ export default function Spells() {
             copy_2={spellDuration}
             copy_3={spellRange}
             copy_4={spell.description}
-          />
+          >
+            {spell.action &&
+              <div className="card__actions">
+                <strong>Action:</strong> {spell.action}
+              </div>
+            }
+            {(spell.element_1 || spell.element_2) &&
+              <div className="card__icons">
+                {spell.element_1 ? 
+                  <div className="btn" data-btn="primary icon">
+                    <Icons icon={spell.element_1} />
+                  </div>
+                : null}
+                {spell.element_2 ? 
+                  <div className="btn" data-btn="primary icon">
+                    <Icons icon={spell.element_2} />
+                  </div>
+                : null}
+              </div>
+            }
+          </Card>
         );
 
       })}
