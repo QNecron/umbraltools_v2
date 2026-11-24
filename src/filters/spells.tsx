@@ -4,9 +4,11 @@ import DataAlpha from '../data/alphabet.json';
 import DataCasters from '../data/spell_casters.json';
 import DataTiers from '../data/spell_tiers.json';
 import DataSpells from '../data/spells.json';
+import DataSummons from '../data/bestiary_summons.json';
 
 import Dialog from '../components/Dialog.tsx';
 import Grid from '../components/Grid.tsx';
+import Accordion from '../components/Accordion.tsx';
 import Card from '../components/Card.tsx';
 import Tabs from '../components/Tabs.tsx';
 import Icons from "../components/Icons.tsx";
@@ -26,6 +28,25 @@ export default function Spells() {
   return(
     <>
     <nav className="filters" aria-label="Spell filters" role="navigation">
+      <Dialog type="secondary" triggerCopy="Summons" triggerButton="primary">
+        {DataSummons.map((entry) => (
+          <Accordion accordion="summons" title={entry.name} button="primary full">
+            <p><strong>AC:</strong> {entry.ac}</p>
+            <p><strong>HP:</strong> {entry.hp}</p>
+            <p><strong>ATK:</strong> {entry.atk}</p>
+            <p><strong>MV:</strong> {entry.mv}</p>
+            <ul>
+              <li><strong>S:</strong> {entry.attributes.str}</li>
+              <li><strong>D:</strong> {entry.attributes.dex}</li>
+              <li><strong>C:</strong> {entry.attributes.con}</li>
+              <li><strong>I:</strong> {entry.attributes.int}</li>
+              <li><strong>W:</strong> {entry.attributes.wis}</li>
+              <li><strong>Ch:</strong> {entry.attributes.chr}</li>
+            </ul>
+            <p><strong>{entry.special.name}.</strong> {entry.special.benefit}</p>
+          </Accordion>
+        ))}
+      </Dialog>
       <Dialog type="secondary" triggerCopy="Filters" triggerButton="primary">
         {Filters.map(({ id, title, data, state, update, condensed}) => (
           <Tabs

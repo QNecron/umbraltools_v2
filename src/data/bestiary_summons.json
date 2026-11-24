@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Elemental, Air",
+    "ac": "14",
+    "hp": "1/2 your HP, minimum of 12",
+    "atk": "1 slam +4 (1d6), +1 slam at level 7",
+    "mv": "near (fly)",
+    "attributes": {
+      "str": "+1",
+      "dex": "+3",
+      "con": "+2",
+      "int": "-2",
+      "wis": "+1",
+      "chr": "-2"
+    },
+    "special": {
+      "name": "Elusive",
+      "benefit": "Invisible to creatures beyond near."
+    }
+  },
+  {
+    "name": "Elemental, Earth",
+    "ac": "12",
+    "hp": "1/2 your HP, minimum of 12",
+    "atk": "1 slam +4 (1d6), +1 slam at level 7",
+    "mv": "near",
+    "attributes": {
+      "str": "+3",
+      "dex": "+1",
+      "con": "+2",
+      "int": "-2",
+      "wis": "+1",
+      "chr": "-2"
+    },
+    "special": {
+      "name": "Unbreakable",
+      "benefit": "Physical damage is reduced by 3."
+    }
+  },
+  {
+    "name": "Elemental, Fire",
+    "ac": "13",
+    "hp": "1/2 your HP, minimum of 12",
+    "atk": "1 slam +3 (1d6), +1 slam at level 7",
+    "mv": "near",
+    "attributes": {
+      "str": "+2",
+      "dex": "+2",
+      "con": "+2",
+      "int": "-2",
+      "wis": "+1",
+      "chr": "-2"
+    },
+    "special": {
+      "name": "Immolation",
+      "benefit": "Close enemies take 1d4 fire damage."
+    }
+  },
+  {
+    "name": "Elemental, Water",
+    "ac": "13",
+    "hp": "1/2 your HP, minimum of 12",
+    "atk": "1 slam +3 (1d6), +1 slam at level 7",
+    "mv": "near (swim)",
+    "attributes": {
+      "str": "+2",
+      "dex": "+2",
+      "con": "+2",
+      "int": "-2",
+      "wis": "+1",
+      "chr": "-2"
+    },
+    "special": {
+      "name": "Amorphous",
+      "benefit": "Able to fit though 1 inch holes or larger."
+    }
+  }
+]
