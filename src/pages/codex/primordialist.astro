@@ -1,0 +1,158 @@
+---
+import Page from '../../components/Page.astro';
+import Section from '../../components/Section.astro';
+import Grid from '../../components/Grid.tsx';
+import Icons from "../../components/Icons.tsx";
+
+import Primordialist from '../../data/class_primordialist.json';
+
+const spellTiers: number[] = Primordialist.flatMap(data => 
+  data.spell_table.flatMap(tier => tier.tier)
+);
+
+interface Levels {
+  level_1?: number[];
+  level_2?: number[];
+  level_3?: number[];
+  level_4?: number[];
+  level_5?: number[];
+  level_6?: number[];
+  level_7?: number[];
+  level_8?: number[];
+  level_9?: number[];
+  level_10?: number[];
+}
+
+type SpellLevels = `spellLevel${1|2|3|4|5|6|7|8|9|10}`;
+
+const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, lvl) => {
+  const lvls = `level_${lvl}` as keyof Levels;
+  const spellLvls = `${lvl}` as SpellLevels;
+
+  acc[spellLvls] = Primordialist.flatMap(data => 
+    data.spell_table.flatMap(spells => spells[lvls] ?? [])
+  );
+
+  return acc;
+}, {} as Record<SpellLevels, number[]>);
+---
+
+<Page 
+  metaTitle="Primordialist | Umbral Tools" 
+  metaDescription="The Primordialist class for your ShadowDark campaign."
+>
+
+  <Section id="conditions" title="Primordialist">
+
+    <Grid desktop="2" tablet="2" mobile="1">
+
+      {Primordialist.map((data) => {
+
+        if(data) {
+          return(
+            <div class="left">
+              <p>{data.description}</p>
+              <p><strong>Weapons:</strong> {data.weapons}</p>
+              <p><strong>Armors:</strong> {data.armors}</p>
+              <p><strong>Hit Points</strong>: {data.hit_dice}</p>
+              <p><strong>Languages:</strong> {data.languages}</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th class="table__header">Roll</th>
+                    <th>Trait</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {data.traits.map((trait) => (
+                    <tr>
+                      <th>{trait.range}</th>
+                      <td>{trait.bonus}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {data.specials.map((special) => (
+                <p><strong>{special.name}.</strong> {special.description}</p>
+              ))}
+              {data.spellcasting.map((spell) => (
+                <p><strong>{spell.name}.</strong> {spell.casting}</p>
+                <p>{spell.starting}</p>
+                <p>{spell.progression}</p>
+                <ul class="table__elements">
+                  <li class="btn" data-btn="primary">Air: &nbsp;<Icons icon={spell.element_air} height={21} width={21} /></li>
+                  <li class="btn" data-btn="primary">Earth: &nbsp;<Icons icon={spell.element_earth} height={21} width={21} /></li>
+                  <li class="btn" data-btn="primary">Fire: &nbsp;<Icons icon={spell.element_fire} height={21} width={21} /></li>
+                  <li class="btn" data-btn="primary">Water: &nbsp;<Icons icon={spell.element_water} height={21} width={21} /></li>
+                  <li class="btn" data-btn="primary">Spirit: &nbsp;<Icons icon={spell.element_spirit} height={21} width={21} /></li>
+                  <li class="btn" data-btn="primary">Focus: &nbsp;<Icons icon={spell.element_focus} height={21} width={21} /></li>
+                </ul>
+              ))}
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th colspan="6">
+                      {data.spell_table.map(table => table.name)}
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="table__header">Levels</th>
+                    {spellTiers.map((levels) => <th>{levels}</th>)}
+                  </tr>
+                  {Object.entries(SpellsPerLevel).map(([levels, numbers]) => (
+                    <tr>
+                      <th>{levels}</th>
+                      {numbers.map((num) => (
+                        <td>{num === 0 ? "-" : num}</td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+            <div class="right">
+              <p><strong>Critical Failure.</strong> {data.spell_mishap}</p>
+              {data.mishap_table.map((table) => (
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th colspan="2">{table.name}</th>
+                    </tr>
+                    <tr>
+                      <th class="table__header">d4</th>
+                      <th>Effect</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th>1</th>
+                      <td>{table.roll_1}</td>
+                    </tr>
+                    <tr>
+                      <th>2</th>
+                      <td>{table.roll_2}</td>
+                    </tr>
+                    <tr>
+                      <th>3</th>
+                      <td>{table.roll_3}</td>
+                    </tr>
+                    <tr>
+                      <th>4</th>
+                      <td>{table.roll_4}</td>
+                    </tr>
+                  </tbody>
+                </table>
+              ))}
+            </div>
+          )
+        }
+
+      })}
+
+    </Grid>
+
+  </Section>
+
+</Page>

@@ -1,6 +1,8 @@
 .icon {
+  --icon-display: inline-flex;
   --icon-filter: invert(80%);
 
+  display: var(--icon-display);
   filter: var(--icon-filter);
   transition: var(--timing-normal);
 }

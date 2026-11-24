@@ -1,0 +1,11 @@
+.table__elements {
+  display: flex;
+  gap: var(--size-16);
+  flex-wrap: wrap;
+  margin-top: var(--size-16);
+
+  > * {
+    flex: 1 0 20%;
+    pointer-events: none;
+  }
+}

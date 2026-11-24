@@ -280,7 +280,7 @@
     "range": "near",
     "description": "A small cloud appears above a target creature's head that begins to rain on them, healing 1d4 damage.",
     "action": "move",
-    "element_1": "air",
+    "element_1": "water",
     "element_2": ""
   },
   {
@@ -288,7 +288,7 @@
     "tier": "1",
     "class": "primordialist",
     "duration": "instant",
-    "range": "near",
+    "range": "far",
     "description": "A lightning bolt strikes a target creature for 1d4 damage, if they're wearing medium or heavy armor it deals an additional 1d4 damage.",
     "action": "action + move",
     "element_1": "fire",
@@ -320,7 +320,7 @@
     "name": "Mud Puddle",
     "tier": "1",
     "class": "primordialist",
-    "duration": "5 rounds",
+    "duration": "3 rounds",
     "range": "near",
     "description": "You cause the ground to soften around a target creature, the area is considered difficult terrian for the spell's duration.",
     "action": "action + move",

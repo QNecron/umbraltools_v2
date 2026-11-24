@@ -74,6 +74,11 @@ const SpellsPerLevel = Array.from({ length: 10 }, (_, i) => i + 1).reduce((acc, 
               {data.specials.map((special) => (
                 <p><strong>{special.name}.</strong> {special.description}</p>
               ))}
+              {data.spellcasting.map((spell) => (
+                <p><strong>{spell.name}.</strong> {spell.casting}</p>
+                <p>{spell.starting}</p>
+                <p>{spell.progression}</p>
+              ))}
               <table class="table">
                 <thead>
                   <tr>

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Primordialist",
+    "description": "Masters of the primordial elements, primordialists, harness the four elements to do their bidding. They're closely aligned with Druidic circles and nature respecting individuals. Their ability to combines elements is unheard of, these combinations result in powerful magic and summoning.",
+    "weapons": "Club, Greataxe, Javelin, Shortbow, Spear, Staff, Warhammer",
+    "armors": "Leather armor, chainmail, and shields",
+    "hit_dice": "1d6 per level",
+    "languages": "You know Primordial.",
+    "traits": [
+      {
+        "range": "2",
+        "bonus": "+1 to melee or ranged attacks"
+      },
+      {
+        "range": "3-6",
+        "bonus": "Elemental's HP increases by +4, +1 AC, and +1 ATK."
+      },
+      {
+        "range": "7-9",
+        "bonus": "+1 to primordialist spellcasting checks"
+      },
+      {
+        "range": "10-11",
+        "bonus": "+2 to Strength, Dexterity, or Wisdom stat"
+      },
+      {
+        "range": "12",
+        "bonus": "Choose a talent or +2 points to distribute to stats"
+      }
+    ],
+    "specials": [
+      {
+        "name": "Primal Savagery",
+        "description": "You gain +1 to weapon and magic damage. In addition, add half your level to these rolls (round down)."
+      }
+    ],
+    "spellcasting": [
+      {
+        "name": "Spellcasting",
+        "casting": "To cast a primordialist spell you know, make a spellcasting check by rolling 1d20 + your Wisdom modifier. The DC to successfully cast a spell is 10 + the spell's tier.",
+        "starting": "You know the four basic elements (air, earth, fire, and water) at level 1. Each element has an action tied to it; Earth and Fire are normal spellcasting actions. Air and Water are movement actions. You may combine two elements to produce another spell, these will take both your action and movement to cast.",
+        "progression": "At level 4 you gain Spirit which can be combined with one of the 4 elements. At level 7 you gain Focus which can be combined with one of the 4 elements or Spirit.",
+        "element_air": "air",
+        "element_earth": "earth",
+        "element_fire": "fire",
+        "element_water": "water",
+        "element_spirit": "spirit",
+        "element_focus": "focus"
+      }
+    ],
+    "spell_table": [
+      {
+        "name": "Spells Known",
+        "tier": [1, 2, 3, 4, 5],
+        "level_1": [4, 0, 0, 0, 0],
+        "level_2": [4, 0, 0, 0, 0],
+        "level_3": [4, 0, 0, 0, 0],
+        "level_4": [4, 1, 0, 0, 0],
+        "level_5": [4, 1, 0, 0, 0],
+        "level_6": [4, 1, 0, 0, 0],
+        "level_7": [4, 1, 1, 0, 0],
+        "level_8": [4, 1, 1, 0, 0],
+        "level_9": [4, 1, 1, 0, 0],
+        "level_10": [4, 1, 1, 0, 0]        
+      }
+    ],
+    "spell_mishap": "If you roll a natural 1 on your spellcasting check you can't cast that spell again until you successfully complete a rest. You must also roll on the Primordialist Mishap table corresponding to the spell's tier (see below).",
+    "mishap_table": [
+      {
+        "name": "Mishap Tier 1",
+        "roll_1": "Self Immolation! You take 1d4 fire damage for the next 3 rounds.",
+        "roll_2": "Drowning Hazzard! You're drowning for the next 3 rounds.",
+        "roll_3": "Strong Winds! You're knocked down for 1 round.",
+        "roll_4": "Dirty Eyes! You're unable to see for 1 round."
+      },
+      {
+        "name": "Mishap Tier 2",
+        "roll_1": "Spiritual Rend! You and creatures within near take 2d4 damage.",
+        "roll_2": "Sudden Winds! All torches and fires within far are extinguish.",
+        "roll_3": "My Foot! A boulder drops on your foot making you unable to move for 5 rounds.",
+        "roll_4": "Hot Hot! Your weapon bursts into flames for 5 rounds, dealing 1d4 damage if held."
+      },
+      {
+        "name": "Mishap Tier 3",
+        "roll_1": "Unfocused! Your spells deal the minimum damage for the next 10 rounds.",
+        "roll_2": "Frozen Winds! You and creatures within near take 3d4 damage.",
+        "roll_3": "Too Soon! The earth swallows you, it will take 5 turns of digging to uncover you.",
+        "roll_4": "Shocking! Roll a die equal to your party size, resulting member takes 3d4 damage."
+      }
+    ]
+  }
+]
