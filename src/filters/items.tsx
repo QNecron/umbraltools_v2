@@ -6,6 +6,7 @@ import DataConsumable from '../data/item_consumables.json';
 import DataArmors from '../data/item_armors.json';
 import DataWeapons from '../data/item_weapons.json';
 import DataWondrous from '../data/item_wondrous.json';
+import DataWondrousHead from '../data/item_wondrous_head.json';
 
 import ItemTypes from '../data/item_types.json';
 
@@ -29,13 +30,14 @@ const DataItems: DataProps[] = [
   ...DataConsumable, 
   ...DataArmors,
   ...DataWeapons,
-  ...DataWondrous
+  ...DataWondrous,
+  ...DataWondrousHead
 ];
 
 export default function Items() {
 
   const [alpha, alphaUpdate] = useState("*");
-  const [type, typeUpdate] = useState("consumable");
+  const [type, typeUpdate] = useState("head");
 
   const Filters = [
     {id: 'type', title: 'Type', data: ItemTypes, state: type, update: typeUpdate, condensed: false},
@@ -59,7 +61,7 @@ export default function Items() {
         ))}
       </Dialog>
     </nav>
-    <Grid desktop="2" tablet="2" mobile="1">
+    <Grid desktop="3" tablet="3" mobile="1">
       {DataItems.sort((a, b) => a.name < b.name ? -1 : 1).map((item, index) => {
                 
         let alphaFilter = item.name.charAt(0);

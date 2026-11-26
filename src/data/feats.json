@@ -32,7 +32,7 @@
   {
     "name": "Shield Slam",
     "description": "Use your move action to attack with shield.",
-    "action": "action",
+    "action": "move",
     "type": "combat"
   },
   {
@@ -55,7 +55,7 @@
   },
   {
     "name": "Initiate",
-    "description": "Learn a tier 1 spell from any spell list.",
+    "description": "Learn a tier 1 spell from any spell list. Requires INT, WIS, or CHR of 14+.",
     "action": "passive",
     "type": "magical"
   },

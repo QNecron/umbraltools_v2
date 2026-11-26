@@ -2,20 +2,22 @@
   {
     "name": "Amulet of Vitality",
     "description": "A gold amulet with a red ruby teardrop at its center.",
-    "benefit": "Your Constitution stat increases by +2 while wearing this amulet.",
+    "benefit": "Your hit points increased by +3 while wearing this amulet.",
     "additional": "",
     "curse": "",
     "attack": 0,
+    "damage": "",
     "damage_melee": "",
     "damage_range": "",
     "damage_magic": "",
-    "hit_points": 0,
+    "hit_points": 3,
     "armor": 0,
-    "spell_casting": 0,
+    "saving_throws": 0,
+    "spellcasting": 0,
     "attributes": {
       "str": 0,
       "dex": 0,
-      "con": 2,
+      "con": 0,
       "int": 0,
       "wis": 0,
       "chr": 0
@@ -31,82 +33,22 @@
     "filter": "neck"
   },
   {
-    "name": "Circlet of Wisdom",
-    "description": "A thin, silver circlet set with a shimmering, blue pearl.",
-    "benefit": "Your Wisdom stat increases by +2 while wearing this circlet.",
+    "name": "Ring of Protection",
+    "description": "A bronze ring with a emerald gem in the center.",
+    "benefit": "Your AC and saving throws increased by +1 while wearing this ring.",
     "additional": "",
     "curse": "",
     "attack": 0,
+    "damage": "",
     "damage_melee": "",
     "damage_range": "",
     "damage_magic": "",
     "hit_points": 0,
-    "armor": 0,
-    "spell_casting": 0,
+    "armor": 1,
+    "saving_throws": 1,
+    "spellcasting": 0,
     "attributes": {
       "str": 0,
-      "dex": 0,
-      "con": 0,
-      "int": 0,
-      "wis": 2,
-      "chr": 0
-    },
-    "resistances": {
-      "physical": 0,
-      "magical": 0,
-      "acid": 0,
-      "cold": 0,
-      "electrical": 0,
-      "fire": 0
-    },
-    "filter": "head"
-  },
-  {
-    "name": "Gloves of Agility",
-    "description": "Thin, leather gloves that seem to meld with the wearer's hands.",
-    "benefit": "Your Dexterity stat increases by +2 while wearing these gloves.",
-    "additional": "",
-    "curse": "",
-    "attack": 0,
-    "damage_melee": "",
-    "damage_range": "",
-    "damage_magic": "",
-    "hit_points": 0,
-    "armor": 0,
-    "spell_casting": 0,
-    "attributes": {
-      "str": 0,
-      "dex": 2,
-      "con": 0,
-      "int": 0,
-      "wis": 0,
-      "chr": 0
-    },
-    "resistances": {
-      "physical": 0,
-      "magical": 0,
-      "acid": 0,
-      "cold": 0,
-      "electrical": 0,
-      "fire": 0
-    },
-    "filter": "arms"
-  },
-  {
-    "name": "Gauntlets of Might",
-    "description": "Heavy, bronze gauntlets with engravings of Herculean giants.",
-    "benefit": "Your Strength stat increases by +2 while wearing these gauntlets.",
-    "additional": "",
-    "curse": "",
-    "attack": 0,
-    "damage_melee": "",
-    "damage_range": "",
-    "damage_magic": "",
-    "hit_points": 0,
-    "armor": 0,
-    "spell_casting": 0,
-    "attributes": {
-      "str": 2,
       "dex": 0,
       "con": 0,
       "int": 0,
@@ -121,26 +63,28 @@
       "electrical": 0,
       "fire": 0
     },
-    "filter": "arms"
+    "filter": "accessory"
   },
   {
-    "name": "Hat of Intellect",
-    "description": "A floppy, pointed hat with a wide brim.",
-    "benefit": "Your Intelligence stat increases by +2 while wearing this hat.",
+    "name": "Cloak of Protection",
+    "description": "A heavy cloak with runic glyhs as embroidery.",
+    "benefit": "Your AC and saving throws increased by +1 while wearing this cloak.",
     "additional": "",
     "curse": "",
     "attack": 0,
+    "damage": "",
     "damage_melee": "",
     "damage_range": "",
     "damage_magic": "",
     "hit_points": 0,
-    "armor": 0,
-    "spell_casting": 0,
+    "armor": 1,
+    "saving_throws": 1,
+    "spellcasting": 0,
     "attributes": {
       "str": 0,
       "dex": 0,
       "con": 0,
-      "int": 2,
+      "int": 0,
       "wis": 0,
       "chr": 0
     },
@@ -152,28 +96,63 @@
       "electrical": 0,
       "fire": 0
     },
-    "filter": "head"
+    "filter": "back"
   },
   {
-    "name": "Necklace of Charm",
-    "description": "A gold, fishbone chain that shimmers with subtle beauty.",
-    "benefit": "Your Charisma stat increases by +2 while wearing this necklace.",
+    "name": "Blunting Belt",
+    "description": "A belt with metallic segmentations etched with runes.",
+    "benefit": "Physical damage reduced by 1 while wearing this belt.",
     "additional": "",
     "curse": "",
     "attack": 0,
+    "damage": "",
     "damage_melee": "",
     "damage_range": "",
     "damage_magic": "",
     "hit_points": 0,
     "armor": 0,
-    "spell_casting": 0,
+    "saving_throws": 0,
+    "spellcasting": 0,
     "attributes": {
       "str": 0,
       "dex": 0,
       "con": 0,
       "int": 0,
       "wis": 0,
-      "chr": 2
+      "chr": 0
+    },
+    "resistances": {
+      "physical": 1,
+      "magical": 0,
+      "acid": 0,
+      "cold": 0,
+      "electrical": 0,
+      "fire": 0
+    },
+    "filter": "waist"
+  },
+  {
+    "name": "Boots of Speed",
+    "description": "These fashionable boots weigh less than a feather.",
+    "benefit": "Your movement can be doubled 3 times per day while wearing these boots.",
+    "additional": "",
+    "curse": "",
+    "attack": 0,
+    "damage": "",
+    "damage_melee": "",
+    "damage_range": "",
+    "damage_magic": "",
+    "hit_points": 0,
+    "armor": 0,
+    "saving_throws": 0,
+    "spellcasting": 0,
+    "attributes": {
+      "str": 0,
+      "dex": 0,
+      "con": 0,
+      "int": 0,
+      "wis": 0,
+      "chr": 0
     },
     "resistances": {
       "physical": 0,
@@ -183,6 +162,6 @@
       "electrical": 0,
       "fire": 0
     },
-    "filter": "neck"
+    "filter": "feet"
   }
 ]

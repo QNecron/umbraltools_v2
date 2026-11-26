@@ -11,7 +11,7 @@ import Tabs from '../components/Tabs.tsx';
 export default function Feats() {
 
   const [alpha, alphaUpdate] = useState("*");
-  const [type, typeUpdate] = useState("general");
+  const [type, typeUpdate] = useState("*");
 
   const FeatTypes = ["general", "combat", "magical", "*"];
 

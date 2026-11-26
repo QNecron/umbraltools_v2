@@ -28,6 +28,19 @@ export default function Spells() {
   return(
     <>
     <nav className="filters" aria-label="Spell filters" role="navigation">
+      <Dialog type="secondary" triggerCopy="Filters" triggerButton="primary">
+        {Filters.map(({ id, title, data, state, update, condensed}) => (
+          <Tabs
+            key={id}
+            classes={condensed ? "condensed" : undefined}
+            data={data}
+            state={state}
+            update={update}
+          >
+            <h3 className="tabs__title" data-heading="5">{title}</h3>
+          </Tabs>
+        ))}
+      </Dialog>
       <Dialog type="secondary" triggerCopy="Summons" triggerButton="primary">
         {DataSummons.map((entry) => (
           <Accordion accordion="summons" title={entry.name} button="primary full">
@@ -45,19 +58,6 @@ export default function Spells() {
             </ul>
             <p><strong>{entry.special.name}.</strong> {entry.special.benefit}</p>
           </Accordion>
-        ))}
-      </Dialog>
-      <Dialog type="secondary" triggerCopy="Filters" triggerButton="primary">
-        {Filters.map(({ id, title, data, state, update, condensed}) => (
-          <Tabs
-            key={id}
-            classes={condensed ? "condensed" : undefined}
-            data={data}
-            state={state}
-            update={update}
-          >
-            <h3 className="tabs__title" data-heading="5">{title}</h3>
-          </Tabs>
         ))}
       </Dialog>
     </nav>
