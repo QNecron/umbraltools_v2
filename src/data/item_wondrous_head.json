@@ -360,7 +360,7 @@
     "name": "Horns of The Bleak Mother",
     "description": "A helm made in the image of an ancient goddess.",
     "benefit": "Attack rolls and saving throws increased by +1 while wearing this helm.",
-    "additional": "You deal +1d4 bonus damage againsts beasts.",
+    "additional": "You deal +1d4 bonus weapon damage againsts beasts.",
     "curse": "",
     "attack": 1,
     "damage": "",
